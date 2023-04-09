@@ -27,9 +27,12 @@ import Sumenh from "./assets/sumenh.svg";
 import Giatri from "./assets/giatri.svg";
 import New1 from "./assets/new-1.svg";
 import New2 from "./assets/new-2.svg";
+import AndroidQr from "./assets/Android-qr.svg";
+import IosQr from "./assets/IOS-qr.svg";
 import Avatar from "./assets/avatar.svg";
 import Service from "./assets/service.svg";
 import Dotblue from "./assets/dot-blue.svg";
+import BgConent1 from "./assets/background-content1.svg";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Social from "./components/Social";
@@ -55,13 +58,13 @@ const settings: Settings = {
 
 const Landing = () => {
   const [width, setWidth] = useState(
-    typeof window !== "undefined" ? window.innerWidth : null
+    typeof window !== "undefined" ? window.innerWidth : 0
   );
   const [menuActive, setMenuActive] = useState(1);
 
   useEffect(() => {
     function handleResize() {
-      setWidth(typeof window !== "undefined" ? window.innerWidth : null);
+      setWidth(typeof window !== "undefined" ? window.innerWidth : 0);
     }
 
     typeof window !== "undefined" &&
@@ -75,7 +78,7 @@ const Landing = () => {
         onChange={(inView, entry) => inView && setMenuActive(1)}
       />
       <Header menuActive={menuActive} />
-      <div style={{ height: "230px" }} id="common"></div>
+      <div style={{ height: "100px" }} id="common"></div>
       <div className="content">
         <InView
           as="div"
@@ -157,7 +160,7 @@ const Landing = () => {
             <Image className="Service-icon" alt="" src={Service} />
             <Swiper
               style={{ width: "80%", height: 300, padding: "0 20px" }}
-              slidesPerView={width || 0 < 800 ? 1 : 3}
+              slidesPerView={width < 800 ? 1 : 3}
               spaceBetween={30}
               autoplay={{
                 delay: 5000,
@@ -257,7 +260,7 @@ const Landing = () => {
           as="div"
           onChange={(inView, entry) => inView && setMenuActive(3)}
         />
-        <div className="content-3 nowrap">
+        <div className="content-3 nowrap bg-img">
           <div>
             <h3>Tải app để trải nghiệm dịch vụ của chúng tôi.</h3>
             <div className="br"></div>
@@ -265,9 +268,15 @@ const Landing = () => {
               Với những tính năng tiện tích, sử dụng đơn giản, nhanh chóng. Vui
               lòng tải app để trải nghiệm ngay:
             </p>
-            <div className="more dowload">
-              Download
-              <Image className="arrow-icon" alt="" src={ArrowBellow} />
+            <div className="more">
+              <div>
+                <p className="descrip text-center">Android</p>
+                <Image className="dowload-icon" alt="" src={AndroidQr} />
+              </div>
+              <div>
+                <p className="descrip text-center">IOS</p>
+                <Image className="dowload-icon" alt="" src={IosQr} />
+              </div>
             </div>
             <div id="about-us"></div>
           </div>

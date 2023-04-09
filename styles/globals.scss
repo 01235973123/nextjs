@@ -143,6 +143,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: FSPFBeauSansPro;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -211,7 +212,7 @@ table {
   }
 }
 #service {
-  height: 230px;
+  height: 100px;
 }
 #about-us {
   position: absolute;
@@ -239,7 +240,6 @@ table {
     left: 40%;
   }
   .title {
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -252,8 +252,8 @@ table {
     padding: 0 0 0 10px;
   }
   .logo-icon {
-    width: 55px;
-    height: 54px;
+    width: 50px;
+    height: 50px;
   }
   .left {
     display: flex;
@@ -266,14 +266,12 @@ table {
     justify-content: space-between;
     align-items: center;
     .mua-h-v6 {
-      font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
       font-size: 48px;
       line-height: 56px;
     }
     .chng-ti-vi {
-      font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
       font-size: 24px;
@@ -309,7 +307,7 @@ table {
     }
   }
   .top {
-    padding: 15px;
+    padding: 10px;
     position: fixed;
     width: 100%;
     z-index: 900;
@@ -331,12 +329,10 @@ table {
 .more {
   height: 68px;
   width: 219px;
-  background: linear-gradient(180deg, #f09e3e 15.62%, #ffff00 100%);
   border-radius: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Mulish";
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
@@ -344,7 +340,7 @@ table {
   color: #3f3d56;
   margin-left: 50%;
   transform: translateX(-50%);
-  margin-top: 90px;
+  margin-top: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
   &:hover {
@@ -375,7 +371,6 @@ table {
           height: 100px;
         }
         .title {
-          font-family: "Montserrat";
           font-style: normal;
           font-weight: 700;
           font-size: 22px;
@@ -384,7 +379,6 @@ table {
           margin-top: 20px;
         }
         .descrip {
-          font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -397,7 +391,7 @@ table {
     }
     .text-1 {
       color: #462e6a;
-      font-family: "Montserrat";
+
       font-style: normal;
       font-weight: 700;
       font-size: 45px;
@@ -411,7 +405,7 @@ table {
     }
     .text-2 {
       text-align: center;
-      font-family: "Montserrat";
+
       font-style: normal;
       font-weight: 500;
       font-size: 19px;
@@ -454,7 +448,7 @@ table {
       cursor: pointer;
       .text-3 {
         color: #000000;
-        font-family: "Mulish";
+
         font-style: normal;
         font-weight: 700;
         font-size: 22px;
@@ -489,15 +483,10 @@ table {
       margin-left: 10px;
     }
   }
-  .dowload {
-    margin-left: 0px;
-    transform: translateX(0px);
-  }
   .content4-icon {
     width: 60%;
   }
   .descrip {
-    font-family: "Mulish";
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -505,7 +494,6 @@ table {
     color: #7d7987;
   }
   h3 {
-    font-family: "Mulish";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -529,7 +517,6 @@ table {
       flex-direction: column;
       justify-content: space-between;
       .title {
-        font-family: "Mulish";
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -538,7 +525,6 @@ table {
         word-wrap: break-word;
       }
       .date {
-        font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -584,7 +570,6 @@ table {
     transform: translateX(-50%);
   }
   h3 {
-    font-family: "Mulish";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -613,7 +598,7 @@ table {
       text-align: center;
       .name {
         white-space: nowrap;
-        font-family: "Mulish";
+
         font-style: normal;
         font-weight: 700;
         font-size: 22px;
@@ -622,7 +607,7 @@ table {
       }
       .position {
         white-space: nowrap;
-        font-family: "Mulish";
+
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -633,7 +618,7 @@ table {
     .describe {
       width: -webkit-fill-available;
       margin-left: 4%;
-      font-family: "Mulish";
+
       font-style: normal;
       font-weight: 400;
       font-size: 22px;
@@ -660,7 +645,6 @@ table {
     width: 25%;
   }
   .title {
-    font-family: "Mulish";
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -668,7 +652,6 @@ table {
     color: #2f2e41;
   }
   .descrip {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -676,13 +659,12 @@ table {
     letter-spacing: 0.01em;
     color: #3f3d56;
     display: flex;
+    align-items: center;
     .icon {
-      margin-top: 2px;
       margin-right: 10px;
     }
   }
   .item {
-    font-family: "Mulish";
     font-style: normal;
     font-size: 16px;
     line-height: 25px;
@@ -761,6 +743,7 @@ table {
 }
 .Content3-icon {
   width: 45%;
+  margin-top: -80px;
 }
 .content-3 .news {
   width: 50%;
@@ -885,7 +868,7 @@ table {
     font-size: 16px;
   }
   .content .content-1 .about-common {
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .content .content-2 .block-country {
     width: 200px;
@@ -1047,10 +1030,10 @@ nav ul li a:hover {
 .menu {
   display: flex;
   width: -webkit-fill-available;
-  .menu_item {
+  .menu-item {
     padding: 10px 20px;
     height: min-content;
-    font-family: "Montserrat";
+
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1066,6 +1049,7 @@ nav ul li a:hover {
   }
   .active {
     opacity: 1;
+    border-bottom: 1px solid;
   }
 }
 @media only screen and (max-width: 1430px) {
@@ -1111,9 +1095,16 @@ nav ul li a:hover {
   }
 }
 .rules {
+  .description {
+    padding: 0 7%;
+    p {
+      margin-bottom: 10px;
+      line-height: 30px;
+    }
+  }
   .title-rule {
     color: #f09e3e;
-    font-family: "Montserrat";
+
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -1137,7 +1128,7 @@ nav ul li a:hover {
 .support {
   .title-rule {
     color: #f09e3e;
-    font-family: "Montserrat";
+
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -1157,4 +1148,10 @@ nav ul li a:hover {
     right: 0;
     opacity: 0.5;
   }
+}
+.bg-img {
+  // background-image: url("/background-content1.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

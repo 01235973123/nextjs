@@ -8,6 +8,9 @@ import Bg from "../../assets/bg.svg";
 import Bg2 from "../../assets/bg-2.svg";
 import Ios from "../../assets/ios.svg";
 import Dot from "../../assets/dot.svg";
+import AndroidQr from "../../assets/Android-qr.svg";
+import IosQr from "../../assets/IOS-qr.svg";
+import { Tooltip } from "antd";
 
 const Header = (props: any) => {
   return (
@@ -35,8 +38,24 @@ const Header = (props: any) => {
           </b>
           <div className="chng-ti-vi">{`Tải App để trải nghiệm dịch vụ của chúng tôi `}</div>
           <div className="dowload">
-            <Image className="dowload-icon" alt="" src={GooglePlay} />
-            <Image className="dowload-icon ios" alt="" src={Ios} />
+            <Tooltip
+              title={<Image className="dowload-icon" alt="" src={AndroidQr} />}
+              color={
+                "linear-gradient(183.41deg, #f09e3e -8.57%, #ffd94f 82.96%)"
+              }
+              key={1}
+            >
+              <Image className="dowload-icon" alt="" src={GooglePlay} />
+            </Tooltip>
+            <Tooltip
+              title={<Image className="dowload-icon" alt="" src={IosQr} />}
+              color={
+                "linear-gradient(183.41deg, #f09e3e -8.57%, #ffd94f 82.96%)"
+              }
+              key={1}
+            >
+              <Image className="dowload-icon ios" alt="" src={Ios} />
+            </Tooltip>
           </div>
         </div>
         <Image className="onboarding-icon" alt="" src={Onboarding} />
