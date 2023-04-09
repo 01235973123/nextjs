@@ -157,7 +157,7 @@ const Landing = () => {
             <Image className="Service-icon" alt="" src={Service} />
             <Swiper
               style={{ width: "80%", height: 300, padding: "0 20px" }}
-              slidesPerView={width < 800 ? 1 : 3}
+              slidesPerView={width || 0 < 800 ? 1 : 3}
               spaceBetween={30}
               autoplay={{
                 delay: 5000,
