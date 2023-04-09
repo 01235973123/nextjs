@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
@@ -376,9 +375,9 @@ const Landing = () => {
                   <p className="position">Nhân viên văn phòng</p>
                 </div>
                 <div className="describe">
-                  “ Nhân viên giao hàng rất nhiệt tình, tác phong lịch sử. Đó là
+                  {` "Nhân viên giao hàng rất nhiệt tình, tác phong lịch sử. Đó là
                   điều thu hút mình sử dụng dịch vụ của PLExpress trong suốt 1
-                  năm qua"
+                  năm qua"`}
                 </div>
               </div>
               <div className="review">
@@ -390,9 +389,9 @@ const Landing = () => {
                   <p className="position">Nội trợ</p>
                 </div>
                 <div className="describe">
-                  “ Với tinh thần trách nhiệm cao, nhân viên tại PLExpress đã hỗ
+                  {`"Với tinh thần trách nhiệm cao, nhân viên tại PLExpress đã hỗ
                   trợ tôi rất tận tâm và chu đáo. Tôi thấy thật đúng đắng khi
-                  chọn PLExpress là người bạn đáng tin cậy trong những năm qua."
+                  chọn PLExpress là người bạn đáng tin cậy trong những năm qua."`}
                 </div>
               </div>
             </Slider>
