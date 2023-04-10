@@ -258,7 +258,7 @@ const Landing = () => {
             </Swiper>
           </div>
         </div>
-        <div id="news" style={{ height: 50 }}></div>
+        <div id="news" style={{ height: 80 }}></div>
         <div className={`content-3 ${menuActive !== 3 && "hidden"}`}>
           <Image className="Content3-icon" alt="" src={Content3} />
           <div className="news">
@@ -333,10 +333,10 @@ const Landing = () => {
                   alt=""
                   src={AndroidQr}
                 />
+                <div id="about-us"></div>
                 <p className="descrip text-center text-black">
                   Hệ điều hành Android
                 </p>
-                <div id="about-us"></div>
               </div>
             </div>
           </div>
@@ -418,7 +418,7 @@ const Landing = () => {
           </SwiperSlide>
         </Swiper> */}
         </div>
-        <div style={{ height: 50 }} id="client"></div>
+        <div style={{ height: 80 }} id="client"></div>
         <div className={`content-3 mb-10 ${menuActive !== 5 && "hidden"}`}>
           <h3>Khách hàng nói về Phúc Long Express</h3>
         </div>
