@@ -11,8 +11,15 @@ import Dot from "../../assets/dot.svg";
 import AndroidQr from "../../assets/Android-qr.svg";
 import IosQr from "../../assets/IOS-qr.svg";
 import { Tooltip } from "antd";
+import { useRouter } from "next/router";
 
 const Header = (props: any) => {
+  const router = useRouter();
+
+  const redirect = (path: string) => {
+    router.push(path);
+    // window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  };
   return (
     <div className="header">
       <Image
@@ -24,7 +31,7 @@ const Header = (props: any) => {
       <Image className="bg-icon" alt="" src={Bg} />
       <Image className="bg-icon bg-2" alt="" src={Bg2} />
       <div className="header-one top">
-        <div className="left">
+        <div className="left cursor-pointer" onClick={() => redirect("/")}>
           <Image className="logo-icon" alt="" src={Logo} />
           <h1 className="title">Phúc Long Express</h1>
         </div>

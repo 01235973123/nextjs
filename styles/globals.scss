@@ -256,7 +256,7 @@ table {
     display: flex;
     width: -webkit-fill-available;
     align-items: center;
-    padding-left: 8%;
+    padding-left: 4%;
   }
   .header-one {
     display: flex;
@@ -315,7 +315,7 @@ table {
     );
     transition: all 0.5s ease;
     &:hover {
-      background: rgba(251, 135, 0, 0.6) !important;
+      background: #ffbb55 !important;
     }
   }
   .second {
@@ -345,16 +345,16 @@ table {
   }
 }
 .content {
-  transition: all 2s ease;
+  transition: all 1s ease;
   .content-1 {
-    transition: all 2s ease;
+    transition: all 1s ease;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 15px;
     .about-common {
-      margin-top: 145px;
+      margin-top: 100px;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -404,12 +404,11 @@ table {
     }
     .text-2 {
       text-align: center;
-
       font-style: normal;
       font-weight: 500;
       font-size: 19px;
       line-height: 27px;
-      color: #7d7987;
+      color: #000000;
       padding: 0 7%;
     }
   }
@@ -417,7 +416,7 @@ table {
     margin-top: 230px;
   }
   .content-2 {
-    transition: all 2s ease;
+    transition: all 1s ease;
     position: relative;
     padding: 113px 10% 0 10%;
     grid-gap: 34px;
@@ -460,16 +459,16 @@ table {
   }
 }
 .body {
-  transition: all 2s ease;
+  transition: all 1s ease;
   .more {
     color: #ffffff;
   }
 }
 .content-3 {
-  transition: all 2s ease;
+  transition: all 1s ease;
   position: relative;
   display: flex;
-  padding: 150px 7% 0 7%;
+  padding: 0 7% 0 7%;
   @media only screen and (max-width: 1000px) {
     padding: 0px 7% 0 7%;
     .Content3-icon {
@@ -564,11 +563,10 @@ table {
   margin: 15px 0 15px 0;
 }
 .content-5 {
-  transition: all 2s ease;
-  padding-top: 150px;
+  transition: all 1s ease;
 }
 .content-6 {
-  transition: all 2s ease;
+  transition: all 1s ease;
   position: relative;
   margin-top: 200px;
   background: linear-gradient(259.17deg, #f09e3e 53.96%, #ffd94f 77.96%);
@@ -658,7 +656,7 @@ table {
   opacity: 0.8;
   margin-top: 200px;
   display: flex;
-  padding: 100px 7%;
+  padding: 30px 7%;
   justify-content: space-between;
   flex-wrap: wrap;
   div {
@@ -677,7 +675,7 @@ table {
   .descrip {
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 27px;
     letter-spacing: 0.01em;
     color: #3f3d56;
@@ -807,7 +805,7 @@ table {
     width: 200px;
   }
   .content-3 .content4-icon {
-    display: none;
+    // display: none;
   }
   .content .content-2 .Service-icon {
     width: 300px;
@@ -1085,6 +1083,10 @@ nav ul li a:hover {
   cursor: pointer;
 }
 .social-popover {
+  animation: shake 5s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -1093,6 +1095,12 @@ nav ul li a:hover {
     #e7b73a -10.34%,
     rgba(251, 135, 0, 0.6) 106.36%
   );
+  span {
+    font-size: 20px;
+  }
+  &:hover {
+    animation: none;
+  }
 }
 .ant-popover-inner {
   background: linear-gradient(
@@ -1116,7 +1124,7 @@ nav ul li a:hover {
 }
 .rules {
   .description {
-    padding: 0 7%;
+    padding: 0 7% 0 20%;
     p {
       margin-bottom: 10px;
       line-height: 30px;
@@ -1249,9 +1257,43 @@ nav ul li a:hover {
 }
 .hidden {
   opacity: 0;
-  height: 0px;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 .y-kien-kh {
-  transition: all 2s ease;
+  transition: all 1s ease;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-10px, 0);
+  }
+  20% {
+    transform: translate(10px, 0);
+  }
+  30% {
+    transform: translate(-10px, 0);
+  }
+  40% {
+    transform: translate(10px, 0);
+  }
+  50% {
+    transform: translate(-10px, 0);
+  }
+  60% {
+    transform: translate(10px, 0);
+  }
+  70% {
+    transform: translate(-10px, 0);
+  }
+  80% {
+    transform: translate(10px, 0);
+  }
+  90% {
+    transform: translate(-10px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }

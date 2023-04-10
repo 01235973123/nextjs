@@ -258,13 +258,18 @@ const Landing = () => {
             </Swiper>
           </div>
         </div>
-        <div className={`content-3 ${menuActive !== 3 && "hidden"}`} id="news">
+        <div id="news" style={{ height: 50 }}></div>
+        <div className={`content-3 ${menuActive !== 3 && "hidden"}`}>
           <Image className="Content3-icon" alt="" src={Content3} />
           <div className="news">
             <h3>Tin tức</h3>
             <div className="br"></div>
             <div className="block-new">
               <Image className="new-icon" alt="" src={New1} />
+              <InView
+                as="div"
+                onChange={(inView, entry) => inView && setMenuActive(3)}
+              />
               <div className="info">
                 <a
                   href="https://baotintuc.vn/kinh-te/logistics-xanh-huong-di-moi-de-phat-trien-ben-vung-20230401073856267.htm"
@@ -278,10 +283,6 @@ const Landing = () => {
             </div>
             <div className="block-new">
               <Image className="new-icon" alt="" src={New2} />
-              <InView
-                as="div"
-                onChange={(inView, entry) => inView && setMenuActive(3)}
-              />
               <div className="info">
                 <a
                   href="https://baotintuc.vn/kinh-te/chuyen-doi-so-thuc-day-tang-truong-va-phat-trien-ben-vung-20230321122719141.htm"
@@ -335,9 +336,9 @@ const Landing = () => {
                 <p className="descrip text-center text-black">
                   Hệ điều hành Android
                 </p>
+                <div id="about-us"></div>
               </div>
             </div>
-            <div id="about-us"></div>
           </div>
           <Image
             className="Content3-icon content4-icon"
@@ -345,10 +346,11 @@ const Landing = () => {
             src={Content4}
           />
         </div>
-        <div
-          className={`content-3 content-5 ${menuActive !== 4 && "hidden"}`}
-          style={{ position: "relative" }}
-        >
+        <InView
+          as="div"
+          onChange={(inView, entry) => inView && setMenuActive(4)}
+        />
+        <div className={`content-3 content-5`} style={{ position: "relative" }}>
           <Image
             className="Content3-icon content5-icon"
             alt=""
@@ -358,10 +360,6 @@ const Landing = () => {
             <h3>Mạng lưới đối tác lớn</h3>
             <div className="br"></div>
             <p className="descrip">
-              <InView
-                as="div"
-                onChange={(inView, entry) => inView && setMenuActive(4)}
-              />
               Chúng tôi đang hợp tác với rất nhiều đối tác vận chuyển uy tín,
               chất lượng và tốc độ, đảm bảo đem đến chất lượng tốt nhất cho
               khách hàng.
@@ -420,10 +418,8 @@ const Landing = () => {
           </SwiperSlide>
         </Swiper> */}
         </div>
-        <div
-          id="client"
-          className={`content-3 mb-10 ${menuActive !== 5 && "hidden"}`}
-        >
+        <div style={{ height: 50 }} id="client"></div>
+        <div className={`content-3 mb-10 ${menuActive !== 5 && "hidden"}`}>
           <h3>Khách hàng nói về Phúc Long Express</h3>
         </div>
         <InView
@@ -495,6 +491,10 @@ const Landing = () => {
               </div>
             </div>
           </div>
+          <InView
+            as="div"
+            onChange={(inView, entry) => inView && setMenuActive(5)}
+          />
         </div>
         <Footer />
       </div>
