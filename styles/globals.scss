@@ -182,24 +182,12 @@ table {
   border-spacing: 0;
 }
 .ant-drawer-wrapper-body {
-  background: linear-gradient(
-    90.47deg,
-    #ffffff -10.34%,
-    rgba(251, 135, 0, 0.6) 106.36%
-  );
+  background: linear-gradient(90.47deg, #ffffff -10.34%, rgba(251, 135, 0, 0.6) 106.36%);
 }
 .ant-drawer-content {
-  background: linear-gradient(
-    90.47deg,
-    #ffffff -10.34%,
-    rgba(251, 135, 0, 0.6) 106.36%
-  );
+  background: linear-gradient(90.47deg, #ffffff -10.34%, rgba(251, 135, 0, 0.6) 106.36%);
   .ant-menu {
-    background: linear-gradient(
-      90.47deg,
-      #ffffff -10.34%,
-      rgba(251, 135, 0, 0.6) 106.36%
-    );
+    background: linear-gradient(90.47deg, #ffffff -10.34%, rgba(251, 135, 0, 0.6) 106.36%);
     color: black;
   }
 }
@@ -221,11 +209,7 @@ table {
   padding: 0 20px;
 }
 .header {
-  background: linear-gradient(
-      180deg,
-      rgba(219, 177, 225, 0.4) 0%,
-      rgba(255, 217, 79, 0.4) 100%
-    ),
+  background: linear-gradient(180deg, rgba(219, 177, 225, 0.4) 0%, rgba(255, 217, 79, 0.4) 100%),
     linear-gradient(18.11deg, rgba(252, 176, 23, 0.4) 20.3%, #ffd94f 127.76%);
   .bg-icon {
     position: absolute;
@@ -308,11 +292,7 @@ table {
     position: fixed;
     width: 100%;
     z-index: 900;
-    background: linear-gradient(
-      90.47deg,
-      #ffffff -10.34%,
-      rgba(251, 135, 0, 0.6) 106.36%
-    );
+    background: linear-gradient(90.47deg, #ffffff -10.34%, rgba(251, 135, 0, 0.6) 106.36%);
     transition: all 0.5s ease;
     &:hover {
       background: rgba(251, 135, 0, 0.6) !important;
@@ -345,7 +325,9 @@ table {
   }
 }
 .content {
+  transition: all 2s ease;
   .content-1 {
+    transition: all 2s ease;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -415,6 +397,7 @@ table {
     margin-top: 230px;
   }
   .content-2 {
+    transition: all 2s ease;
     position: relative;
     padding: 113px 10% 0 10%;
     grid-gap: 34px;
@@ -457,11 +440,13 @@ table {
   }
 }
 .body {
+  transition: all 2s ease;
   .more {
     color: #ffffff;
   }
 }
 .content-3 {
+  transition: all 2s ease;
   position: relative;
   display: flex;
   padding: 150px 7% 0 7%;
@@ -559,9 +544,11 @@ table {
   margin: 15px 0 15px 0;
 }
 .content-5 {
+  transition: all 2s ease;
   padding-top: 150px;
 }
 .content-6 {
+  transition: all 2s ease;
   position: relative;
   margin-top: 200px;
   background: linear-gradient(259.17deg, #f09e3e 53.96%, #ffd94f 77.96%);
@@ -857,7 +844,7 @@ table {
     transform: translateY(-20%);
   }
   .content-3 {
-    margin-bottom:0px;
+    margin-bottom: 0px;
     h3 {
       font-size: 18px;
     }
@@ -1081,18 +1068,10 @@ nav ul li a:hover {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: linear-gradient(
-    90.47deg,
-    #e7b73a -10.34%,
-    rgba(251, 135, 0, 0.6) 106.36%
-  );
+  background: linear-gradient(90.47deg, #e7b73a -10.34%, rgba(251, 135, 0, 0.6) 106.36%);
 }
 .ant-popover-inner {
-  background: linear-gradient(
-      180deg,
-      rgba(219, 177, 225, 0.4) 0%,
-      rgba(255, 217, 79, 0.4) 100%
-    ),
+  background: linear-gradient(180deg, rgba(219, 177, 225, 0.4) 0%, rgba(255, 217, 79, 0.4) 100%),
     linear-gradient(18.11deg, rgba(252, 176, 23, 0.4) 20.3%, #ffd94f 127.76%);
   .content {
     display: flex !important;
@@ -1239,4 +1218,12 @@ nav ul li a:hover {
   .content-6 {
     width: 100%;
   }
+}
+.hidden {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.y-kien-kh {
+  transition: all 2s ease;
+  opacity: 1;
 }

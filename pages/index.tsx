@@ -78,7 +78,10 @@ const Landing = () => {
         onChange={(inView, entry) => inView && setMenuActive(1)}
       />
       <Header menuActive={menuActive} />
-      <div className="content-3 nowrap bg-img" id="common">
+      <div
+        className={`content-3 nowrap bg-img ${menuActive !== 6 && "hidden"}`}
+        id="common"
+      >
         <div className="reason">
           <div className="reason-title">
             Lý do bạn nên chọn chúng tôi
@@ -114,7 +117,7 @@ const Landing = () => {
         />
       </div>
       <div style={{ height: "100px" }}></div>
-      <div className="content">
+      <div className={`content`}>
         <div className="content-1">
           <Image
             className="dot"
@@ -162,7 +165,7 @@ const Landing = () => {
           </div>
         </div>
         <div id="service"></div>
-        <div className="content-1">
+        <div className={`content-1  ${menuActive !== 2 && "hidden"}`}>
           <Image
             className="dot"
             style={{ top: "-80%", left: "40%" }}
@@ -180,7 +183,7 @@ const Landing = () => {
             hợp với nhu cầu.
           </p>
         </div>
-        <div className="body">
+        <div className={`body`}>
           <div className="content-2">
             <Image
               className="dot"
@@ -254,7 +257,7 @@ const Landing = () => {
             </Swiper>
           </div>
         </div>
-        <div className="content-3" id="news">
+        <div className={`content-3 ${menuActive !== 3 && "hidden"}`} id="news">
           <Image className="Content3-icon" alt="" src={Content3} />
           <div className="news">
             <h3>Tin tức</h3>
@@ -335,7 +338,10 @@ const Landing = () => {
             src={Content4}
           />
         </div>
-        <div className="content-3 content-5" style={{ position: "relative" }}>
+        <div
+          className={`content-3 content-5 ${menuActive !== 4 && "hidden"}`}
+          style={{ position: "relative" }}
+        >
           <Image
             className="Content3-icon content5-icon"
             alt=""
@@ -410,8 +416,8 @@ const Landing = () => {
         <div id="client" className="content-3 mb-10">
           <h3>Khách hàng nói về Phúc Long Express</h3>
         </div>
-        <div className="flex y-kien-kh">
-          <div className="content-6">
+        <div className={`flex y-kien-kh`}>
+          <div className={`content-6`}>
             <Image
               className="dot"
               style={{ top: "2%", right: "0%" }}
@@ -447,7 +453,7 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          <div className="content-6">
+          <div className={`content-6`}>
             <Image
               className="dot"
               style={{ top: "2%", right: "0%" }}
