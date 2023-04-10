@@ -21,7 +21,7 @@ import Bodaonha from "./assets/bodaonha.svg";
 import Content3 from "./assets/content-3.svg";
 import Content4 from "./assets/content-4.svg";
 import Content5 from "./assets/content-5.svg";
-import ArrowBellow from "./assets/arrow-bellow.svg";
+import Active from "./assets/active.svg";
 import Tamnhin from "./assets/tamnhin.svg";
 import Sumenh from "./assets/sumenh.svg";
 import Giatri from "./assets/giatri.svg";
@@ -32,7 +32,7 @@ import IosQr from "./assets/IOS-qr.svg";
 import Avatar from "./assets/avatar.svg";
 import Service from "./assets/service.svg";
 import Dotblue from "./assets/dot-blue.svg";
-import BgConent1 from "./assets/background-content1.svg";
+import ImgAbout from "./assets/img-about.svg";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Social from "./components/Social";
@@ -78,12 +78,43 @@ const Landing = () => {
         onChange={(inView, entry) => inView && setMenuActive(1)}
       />
       <Header menuActive={menuActive} />
-      <div style={{ height: "100px" }} id="common"></div>
-      <div className="content">
-        <InView
-          as="div"
-          onChange={(inView, entry) => inView && setMenuActive(6)}
+      <div className="content-3 nowrap bg-img" id="common">
+        <div className="reason">
+          <div className="reason-title">
+            Lý do bạn nên chọn chúng tôi
+          </div>
+          <div className="item">
+            <Image alt="" src={Active} /> Giao hàng chuyên nghiệp
+          </div>
+          <div className="item">
+            <Image alt="" src={Active} />
+            Sẵn sàng khi cần
+          </div>
+          <div className="item">
+            <Image alt="" src={Active} />
+            Tiết kiệm tối đa
+          </div>
+          <div className="item">
+            <Image alt="" src={Active} />
+            An toàn tuyệt đối
+          </div>
+          <div className="item">
+            <Image alt="" src={Active} />
+            Hạn chế rủi ro
+          </div>
+        </div>
+        <Image
+          className="Content3-icon content4-icon resize-custom"
+          alt=""
+          src={ImgAbout}
         />
+      </div>
+      <InView
+        as="div"
+        onChange={(inView, entry) => inView && setMenuActive(6)}
+      />
+      <div style={{ height: "100px" }}></div>
+      <div className="content">
         <div className="content-1">
           <Image
             className="dot"
@@ -100,7 +131,7 @@ const Landing = () => {
           <p className="text-1">Giới thiệu chung</p>
           <div className="br-1"></div>
           <p className="text-2">
-            Chúng tôi với đội ngũ chuyên nghiệm, trách nhiệm, nhiệt tình, lấy
+            Chúng tôi với đội ngũ chuyên nghiệp, trách nhiệm, nhiệt tình, lấy
             khách hàng là cốt lõi phát triển công ty, chúng tôi mong đợi sẽ đưa
             đến cho quý khách những trải nghiệm và dịch vụ tốt nhất.
           </p>
@@ -145,10 +176,6 @@ const Landing = () => {
             hợp với nhu cầu.
           </p>
         </div>
-        <InView
-          as="div"
-          onChange={(inView, entry) => inView && setMenuActive(2)}
-        />
         <div className="body">
           <div className="content-2">
             <Image
@@ -172,6 +199,10 @@ const Landing = () => {
               modules={[Autoplay, Pagination]}
               className="mySwiper"
             >
+              <InView
+                as="div"
+                onChange={(inView, entry) => inView && setMenuActive(2)}
+              />
               <SwiperSlide>
                 <div className="block">
                   <div className="block-country">
@@ -262,20 +293,38 @@ const Landing = () => {
         />
         <div className="content-3 nowrap bg-img">
           <div>
-            <h3>Tải app để trải nghiệm dịch vụ của chúng tôi.</h3>
+            <h3 className="text-white">
+              Tải app để trải nghiệm dịch vụ của chúng tôi.
+            </h3>
             <div className="br"></div>
-            <p className="descrip">
+            <p className="descrip text-white">
               Với những tính năng tiện tích, sử dụng đơn giản, nhanh chóng. Vui
               lòng tải app để trải nghiệm ngay:
             </p>
-            <div className="more">
+            <div className="flex justify-between mt-10">
               <div>
-                <p className="descrip text-center">Android</p>
-                <Image className="dowload-icon" alt="" src={AndroidQr} />
+                <Image
+                  className="dowload-icon"
+                  width={250}
+                  height={250}
+                  alt=""
+                  src={IosQr}
+                />
+                <p className="descrip text-center text-black">
+                  Hệ điều hành IOS
+                </p>
               </div>
               <div>
-                <p className="descrip text-center">IOS</p>
-                <Image className="dowload-icon" alt="" src={IosQr} />
+                <Image
+                  className="dowload-icon"
+                  width={250}
+                  height={250}
+                  alt=""
+                  src={AndroidQr}
+                />
+                <p className="descrip text-center text-black">
+                  Hệ điều hành Android
+                </p>
               </div>
             </div>
             <div id="about-us"></div>
@@ -358,30 +407,33 @@ const Landing = () => {
           </SwiperSlide>
         </Swiper> */}
         </div>
-        <div className="content-6">
-          <h3>Khách hàng nói về PLExpress</h3>
-          <Image
-            className="dot"
-            style={{ top: "2%", right: "0%" }}
-            alt=""
-            src={Dotblue}
-          />
-          <Image
-            className="dot"
-            style={{ top: "80%", left: "0%" }}
-            alt=""
-            src={Dotblue}
-          />
-          <div className="br"></div>
-          <div className="slider-container" style={{ touchAction: "pan-y" }}>
-            <Slider {...settings}>
+        <div className="content-3 mb-10">
+          <h3>Khách hàng nói về Phúc Long Express</h3>
+        </div>
+        <div className="flex y-kien-kh">
+          <div className="content-6">
+            <Image
+              className="dot"
+              style={{ top: "2%", right: "0%" }}
+              alt=""
+              src={Dotblue}
+            />
+            <Image
+              className="dot"
+              style={{ top: "80%", left: "0%" }}
+              alt=""
+              src={Dotblue}
+            />
+            <div className="slider-container" style={{ touchAction: "pan-y" }}>
               <div className="review">
-                <div className="img">
-                  <Image className="avatar" alt="" src={Avatar} />
-                </div>
-                <div className="info">
-                  <p className="name">Nguyễn Minh Anh</p>
-                  <p className="position">Nhân viên văn phòng</p>
+                <div className="flex flex-wrap justify-center items-center gap-y-4">
+                  <div className="img">
+                    <Image className="avatar" alt="" src={Avatar} />
+                  </div>
+                  <div className="info">
+                    <p className="name">Nguyễn Minh Anh</p>
+                    <p className="position">Nhân viên văn phòng</p>
+                  </div>
                 </div>
                 <div className="describe">
                   {` "Nhân viên giao hàng rất nhiệt tình, tác phong lịch sử. Đó là
@@ -389,13 +441,35 @@ const Landing = () => {
                   năm qua"`}
                 </div>
               </div>
+              <InView
+                as="div"
+                onChange={(inView, entry) => inView && setMenuActive(5)}
+              />
+            </div>
+          </div>
+          <div className="content-6">
+            <Image
+              className="dot"
+              style={{ top: "2%", right: "0%" }}
+              alt=""
+              src={Dotblue}
+            />
+            <Image
+              className="dot"
+              style={{ top: "80%", left: "0%" }}
+              alt=""
+              src={Dotblue}
+            />
+            <div className="slider-container" style={{ touchAction: "pan-y" }}>
               <div className="review">
-                <div className="img">
-                  <Image className="avatar" alt="" src={Avatar} />
-                </div>
-                <div className="info">
-                  <p className="name">Phạm Khánh Nguyên</p>
-                  <p className="position">Nội trợ</p>
+                <div className="flex flex-wrap justify-center items-center gap-y-4">
+                  <div className="img">
+                    <Image className="avatar" alt="" src={Avatar} />
+                  </div>
+                  <div className="info">
+                    <p className="name">Phạm Khánh Nguyên</p>
+                    <p className="position">Nội trợ</p>
+                  </div>
                 </div>
                 <div className="describe">
                   {`"Với tinh thần trách nhiệm cao, nhân viên tại PLExpress đã hỗ
@@ -403,11 +477,7 @@ const Landing = () => {
                   chọn PLExpress là người bạn đáng tin cậy trong những năm qua."`}
                 </div>
               </div>
-            </Slider>
-            <InView
-              as="div"
-              onChange={(inView, entry) => inView && setMenuActive(5)}
-            />
+            </div>
           </div>
         </div>
         <Footer />
