@@ -78,47 +78,9 @@ const Landing = () => {
         onChange={(inView, entry) => inView && setMenuActive(1)}
       />
       <Header menuActive={menuActive} />
-      <div
-        className={`content-3 nowrap bg-img ${menuActive !== 6 && "hidden"}`}
-        id="common"
-      >
-        <div className="reason">
-          <div className="reason-title">
-            Lý do bạn nên chọn chúng tôi
-            <InView
-              as="div"
-              onChange={(inView, entry) => inView && setMenuActive(6)}
-            />
-          </div>
-          <div className="item">
-            <Image alt="" src={Active} /> Giao hàng chuyên nghiệp
-          </div>
-          <div className="item">
-            <Image alt="" src={Active} />
-            Sẵn sàng khi cần
-          </div>
-          <div className="item">
-            <Image alt="" src={Active} />
-            Tiết kiệm tối đa
-          </div>
-          <div className="item">
-            <Image alt="" src={Active} />
-            An toàn tuyệt đối
-          </div>
-          <div className="item">
-            <Image alt="" src={Active} />
-            Hạn chế rủi ro
-          </div>
-        </div>
-        <Image
-          className="Content3-icon content4-icon resize-custom"
-          alt=""
-          src={ImgAbout}
-        />
-      </div>
-      <div style={{ height: "100px" }}></div>
+      <div style={{ height: "100px" }} id="common"></div>
       <div className={`content`}>
-        <div className="content-1">
+        <div className={`content-1 ${menuActive !== 6 && "hidden"}`}>
           <Image
             className="dot"
             style={{ top: "50%", left: "65%" }}
@@ -130,6 +92,10 @@ const Landing = () => {
             style={{ top: "80%", left: "12%" }}
             alt=""
             src={Dotblue}
+          />
+          <InView
+            as="div"
+            onChange={(inView, entry) => inView && setMenuActive(6)}
           />
           <p className="text-1">Giới thiệu chung</p>
           <div className="br-1"></div>
@@ -164,6 +130,41 @@ const Landing = () => {
             </div>
           </div>
         </div>
+        <div
+          className={`content-3 nowrap bg-img ${menuActive !== 6 && "hidden"}`}
+        >
+          <div className="reason">
+            <div className="reason-title">Lý do bạn nên chọn chúng tôi</div>
+            <InView
+              as="div"
+              onChange={(inView, entry) => inView && setMenuActive(6)}
+            />
+            <div className="item">
+              <Image alt="" src={Active} /> Giao hàng chuyên nghiệp
+            </div>
+            <div className="item">
+              <Image alt="" src={Active} />
+              Sẵn sàng khi cần
+            </div>
+            <div className="item">
+              <Image alt="" src={Active} />
+              Tiết kiệm tối đa
+            </div>
+            <div className="item">
+              <Image alt="" src={Active} />
+              An toàn tuyệt đối
+            </div>
+            <div className="item">
+              <Image alt="" src={Active} />
+              Hạn chế rủi ro
+            </div>
+          </div>
+          <Image
+            className="Content3-icon content4-icon resize-custom"
+            alt=""
+            src={ImgAbout}
+          />
+        </div>
         <div id="service"></div>
         <div className={`content-1  ${menuActive !== 2 && "hidden"}`}>
           <Image
@@ -191,7 +192,7 @@ const Landing = () => {
               alt=""
               src={Dotblue}
             />
-            <Image className="Service-icon" alt="" src={Service} />
+            {/* <Image className="Service-icon" alt="" src={Service} /> */}
             <Swiper
               style={{ width: "80%", height: 300, padding: "0 20px" }}
               slidesPerView={width < 800 ? 1 : 3}
@@ -294,7 +295,9 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className="content-3 nowrap bg-img">
+        <div
+          className={`content-3 nowrap bg-img ${menuActive !== 3 && "hidden"}`}
+        >
           <div>
             <h3 className="text-white">
               Tải app để trải nghiệm dịch vụ của chúng tôi.
@@ -304,7 +307,7 @@ const Landing = () => {
               Với những tính năng tiện tích, sử dụng đơn giản, nhanh chóng. Vui
               lòng tải app để trải nghiệm ngay:
             </p>
-            <div className="flex justify-between mt-10">
+            <div className="flex justify-evenly mt-10">
               <div>
                 <Image
                   className="dowload-icon"
@@ -316,6 +319,10 @@ const Landing = () => {
                 <p className="descrip text-center text-black">
                   Hệ điều hành IOS
                 </p>
+                <InView
+                  as="div"
+                  onChange={(inView, entry) => inView && setMenuActive(3)}
+                />
               </div>
               <div>
                 <Image
@@ -413,10 +420,17 @@ const Landing = () => {
           </SwiperSlide>
         </Swiper> */}
         </div>
-        <div id="client" className="content-3 mb-10">
+        <div
+          id="client"
+          className={`content-3 mb-10 ${menuActive !== 5 && "hidden"}`}
+        >
           <h3>Khách hàng nói về Phúc Long Express</h3>
         </div>
-        <div className={`flex y-kien-kh`}>
+        <InView
+          as="div"
+          onChange={(inView, entry) => inView && setMenuActive(5)}
+        />
+        <div className={`flex y-kien-kh ${menuActive !== 5 && "hidden"}`}>
           <div className={`content-6`}>
             <Image
               className="dot"
@@ -446,10 +460,6 @@ const Landing = () => {
                   điều thu hút mình sử dụng dịch vụ của PLExpress trong suốt 1
                   năm qua"`}
                 </div>
-                <InView
-                  as="div"
-                  onChange={(inView, entry) => inView && setMenuActive(5)}
-                />
               </div>
             </div>
           </div>

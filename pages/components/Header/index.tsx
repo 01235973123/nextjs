@@ -45,7 +45,12 @@ const Header = (props: any) => {
               }
               key={1}
             >
-              <Image className="dowload-icon" alt="" src={GooglePlay} />
+              <a
+                href="https://play.google.com/store/apps/details?id=com.plelogistic.phuclongexpress"
+                target="_blank"
+              >
+                <Image className="dowload-icon" alt="" src={GooglePlay} />
+              </a>
             </Tooltip>
             <Tooltip
               title={<Image className="dowload-icon" alt="" src={IosQr} />}
@@ -54,7 +59,12 @@ const Header = (props: any) => {
               }
               key={1}
             >
-              <Image className="dowload-icon ios" alt="" src={Ios} />
+              <a
+                href="https://play.google.com/store/apps/details?id=com.plelogistic.phuclongexpress"
+                target="_blank"
+              >
+                <Image className="dowload-icon ios" alt="" src={Ios} />
+              </a>
             </Tooltip>
           </div>
         </div>
