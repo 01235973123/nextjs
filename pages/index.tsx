@@ -82,6 +82,10 @@ const Landing = () => {
         <div className="reason">
           <div className="reason-title">
             Lý do bạn nên chọn chúng tôi
+            <InView
+              as="div"
+              onChange={(inView, entry) => inView && setMenuActive(6)}
+            />
           </div>
           <div className="item">
             <Image alt="" src={Active} /> Giao hàng chuyên nghiệp
@@ -109,10 +113,6 @@ const Landing = () => {
           src={ImgAbout}
         />
       </div>
-      <InView
-        as="div"
-        onChange={(inView, entry) => inView && setMenuActive(6)}
-      />
       <div style={{ height: "100px" }}></div>
       <div className="content">
         <div className="content-1">
@@ -170,6 +170,10 @@ const Landing = () => {
             src={Dotblue}
           />
           <p className="text-1">Quốc gia hỗ trợ dịch vụ</p>
+          <InView
+            as="div"
+            onChange={(inView, entry) => inView && setMenuActive(2)}
+          />
           <div className="br-1"></div>
           <p className="text-2">
             Chúng tôi cung cấp đa dạng dịch vụ để khách hàng có thể chọn lựa phù
@@ -199,10 +203,6 @@ const Landing = () => {
               modules={[Autoplay, Pagination]}
               className="mySwiper"
             >
-              <InView
-                as="div"
-                onChange={(inView, entry) => inView && setMenuActive(2)}
-              />
               <SwiperSlide>
                 <div className="block">
                   <div className="block-country">
@@ -274,6 +274,10 @@ const Landing = () => {
             </div>
             <div className="block-new">
               <Image className="new-icon" alt="" src={New2} />
+              <InView
+                as="div"
+                onChange={(inView, entry) => inView && setMenuActive(3)}
+              />
               <div className="info">
                 <a
                   href="https://baotintuc.vn/kinh-te/chuyen-doi-so-thuc-day-tang-truong-va-phat-trien-ben-vung-20230321122719141.htm"
@@ -287,10 +291,6 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <InView
-          as="div"
-          onChange={(inView, entry) => inView && setMenuActive(3)}
-        />
         <div className="content-3 nowrap bg-img">
           <div>
             <h3 className="text-white">
@@ -342,19 +342,19 @@ const Landing = () => {
             src={Content5}
           />
           <div className="network">
-            <InView
-              as="div"
-              onChange={(inView, entry) => inView && setMenuActive(4)}
-            />
             <h3>Mạng lưới đối tác lớn</h3>
             <div className="br"></div>
             <p className="descrip">
+              <InView
+                as="div"
+                onChange={(inView, entry) => inView && setMenuActive(4)}
+              />
               Chúng tôi đang hợp tác với rất nhiều đối tác vận chuyển uy tín,
               chất lượng và tốc độ, đảm bảo đem đến chất lượng tốt nhất cho
               khách hàng.
             </p>
           </div>
-          <div id="client" style={{ position: "absolute", top: "50%" }}></div>
+          <div style={{ position: "absolute", top: "50%" }}></div>
           {/* <Swiper
           style={{ width: "50%", height: 300, padding: "0 20px" }}
           spaceBetween={30}
@@ -407,7 +407,7 @@ const Landing = () => {
           </SwiperSlide>
         </Swiper> */}
         </div>
-        <div className="content-3 mb-10">
+        <div id="client" className="content-3 mb-10">
           <h3>Khách hàng nói về Phúc Long Express</h3>
         </div>
         <div className="flex y-kien-kh">
@@ -440,11 +440,11 @@ const Landing = () => {
                   điều thu hút mình sử dụng dịch vụ của PLExpress trong suốt 1
                   năm qua"`}
                 </div>
+                <InView
+                  as="div"
+                  onChange={(inView, entry) => inView && setMenuActive(5)}
+                />
               </div>
-              <InView
-                as="div"
-                onChange={(inView, entry) => inView && setMenuActive(5)}
-              />
             </div>
           </div>
           <div className="content-6">

@@ -214,10 +214,7 @@ table {
 #service {
   height: 100px;
 }
-#about-us {
-  position: absolute;
-  bottom: 100px;
-}
+
 .network {
   width: 50%;
   height: 300px;
@@ -562,7 +559,7 @@ table {
   margin: 15px 0 15px 0;
 }
 .content-5 {
-  padding-top: 0px;
+  padding-top: 150px;
 }
 .content-6 {
   position: relative;
@@ -860,9 +857,9 @@ table {
     transform: translateY(-20%);
   }
   .content-3 {
-    padding: 90px 5% 0 5%;
+    margin-bottom:0px;
     h3 {
-      font-size: 24px;
+      font-size: 18px;
     }
     .descrip {
       font-size: 16px;
