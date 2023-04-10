@@ -333,7 +333,6 @@ const Landing = () => {
                   alt=""
                   src={AndroidQr}
                 />
-                <div id="about-us"></div>
                 <p className="descrip text-center text-black">
                   Hệ điều hành Android
                 </p>
@@ -350,6 +349,7 @@ const Landing = () => {
           as="div"
           onChange={(inView, entry) => inView && setMenuActive(4)}
         />
+        <div style={{ height: 200 }} id="about-us"></div>
         <div className={`content-3 content-5`} style={{ position: "relative" }}>
           <Image
             className="Content3-icon content5-icon"
