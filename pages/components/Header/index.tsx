@@ -30,7 +30,7 @@ const Header = (props: any) => {
       />
       <Image className="bg-icon" alt="" src={Bg} />
       <Image className="bg-icon bg-2" alt="" src={Bg2} />
-      <div className="header-one top">
+      <div className={`header-one top ${props.menuActive > 1 && 'scroll'}`}>
         <div className="left cursor-pointer" onClick={() => redirect("/")}>
           <Image className="logo-icon" alt="" src={Logo} />
           <h1 className="title">Phúc Long Express</h1>

@@ -345,10 +345,6 @@ const Landing = () => {
             src={Content4}
           />
         </div>
-        <InView
-          as="div"
-          onChange={(inView, entry) => inView && setMenuActive(4)}
-        />
         <div style={{ height: 300 }} id="about-us"></div>
         <div className={`content-3 content-5`} style={{ position: "relative" }}>
           <Image

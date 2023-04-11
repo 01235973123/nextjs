@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Header from "../components/Header";
 import RulesImg from "../assets/rules.svg";
 import Footer from "../components/Footer";
+import { InView } from "react-intersection-observer";
 
 const Support = () => {
+  const [menuActive, setMenuActive] = useState(0);
+
   return (
     <div className="rules">
-      <Header />
+      <InView
+        as="div"
+        onChange={(inView, entry) => inView && setMenuActive(0)}
+      />
+      <Header menuActive={menuActive} />
       <div className="dieu-khoan title-rule">
+        <InView
+          as="div"
+          onChange={(inView, entry) => inView && setMenuActive(10)}
+        />
         Thông tin liên hệ hỗ trợ
         <Image className="RulesImg-icon" alt="" src={RulesImg} />
       </div>

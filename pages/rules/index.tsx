@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Header from "../components/Header";
 import RulesImg from "../assets/rules.svg";
 import Footer from "../components/Footer";
+import { InView } from "react-intersection-observer";
 
 const Rules = () => {
+  const [menuActive, setMenuActive] = useState(0);
+
   return (
     <div className="rules">
-      <Header />
+      <InView
+        as="div"
+        onChange={(inView, entry) => inView && setMenuActive(0)}
+      />
+      <Header menuActive={menuActive} />
       <div className="dieu-khoan title-rule">
         Điều khoản và chính sách sử dụng
         <Image className="RulesImg-icon" alt="" src={RulesImg} />
@@ -17,6 +24,10 @@ const Rules = () => {
           Bằng việc chấp nhận sử dụng Dịch vụ của Phúc Long Express, Khách hàng
           hiểu và đồng ý với chính sách về Quyền và nghĩa vụ được nêu dưới đây.
         </p>
+        <InView
+          as="div"
+          onChange={(inView, entry) => inView && setMenuActive(10)}
+        />
         <p className="font-bold">I. THUẬT NGỮ</p>
         <p>
           <span className="font-bold">“PL Express”</span> có nghĩa là Phúc Long

@@ -314,9 +314,9 @@ table {
       rgba(251, 135, 0, 0.6) 106.36%
     );
     transition: all 0.5s ease;
-    &:hover {
-      background: #ffbb55 !important;
-    }
+  }
+  .scroll {
+    background: #ffbb55 !important;
   }
   .second {
     padding: 100px 5% 0 5%;
@@ -512,7 +512,7 @@ table {
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
-    color: #7d7987;
+    color: #000000;
   }
   h3 {
     font-style: normal;
@@ -1051,7 +1051,6 @@ nav ul li a:hover {
   .menu-item {
     padding: 10px 20px;
     height: min-content;
-
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1124,7 +1123,7 @@ nav ul li a:hover {
 }
 .rules {
   .description {
-    padding: 0 7% 0 20%;
+    padding: 0 7% 0 30%;
     p {
       margin-bottom: 10px;
       line-height: 30px;
