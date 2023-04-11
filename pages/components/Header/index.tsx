@@ -67,7 +67,7 @@ const Header = (props: any) => {
               key={1}
             >
               <a
-                href="https://play.google.com/store/apps/details?id=com.plelogistic.phuclongexpress"
+                href="https://apps.apple.com/vn/app/phuclong-express/id6447059509"
                 target="_blank"
               >
                 <Image className="dowload-icon ios" alt="" src={Ios} />
