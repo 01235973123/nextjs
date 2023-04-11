@@ -345,7 +345,7 @@ const Landing = () => {
             src={Content4}
           />
         </div>
-        <div style={{ height: 300 }} id="about-us"></div>
+        <div style={{ height: 100 }} id="about-us"></div>
         <div className={`content-3 content-5`} style={{ position: "relative" }}>
           <Image
             className="Content3-icon content5-icon"
