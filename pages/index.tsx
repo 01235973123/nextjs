@@ -266,10 +266,6 @@ const Landing = () => {
             <div className="br"></div>
             <div className="block-new">
               <Image className="new-icon" alt="" src={New1} />
-              <InView
-                as="div"
-                onChange={(inView, entry) => inView && setMenuActive(3)}
-              />
               <div className="info">
                 <a
                   href="https://baotintuc.vn/kinh-te/logistics-xanh-huong-di-moi-de-phat-trien-ben-vung-20230401073856267.htm"
@@ -281,6 +277,10 @@ const Landing = () => {
                 <p className="date">Ngày đăng: 30/01/2023</p>
               </div>
             </div>
+            <InView
+              as="div"
+              onChange={(inView, entry) => inView && setMenuActive(3)}
+            />
             <div className="block-new">
               <Image className="new-icon" alt="" src={New2} />
               <div className="info">
@@ -349,7 +349,7 @@ const Landing = () => {
           as="div"
           onChange={(inView, entry) => inView && setMenuActive(4)}
         />
-        <div style={{ height: 200 }} id="about-us"></div>
+        <div style={{ height: 300 }} id="about-us"></div>
         <div className={`content-3 content-5`} style={{ position: "relative" }}>
           <Image
             className="Content3-icon content5-icon"
@@ -422,11 +422,7 @@ const Landing = () => {
         <div className={`content-3 mb-10 ${menuActive !== 5 && "hidden"}`}>
           <h3>Khách hàng nói về Phúc Long Express</h3>
         </div>
-        <InView
-          as="div"
-          onChange={(inView, entry) => inView && setMenuActive(5)}
-        />
-        <div className={`flex y-kien-kh ${menuActive !== 5 && "hidden"}`}>
+        <div className={`flex y-kien-kh`}>
           <div className={`content-6`}>
             <Image
               className="dot"
@@ -446,6 +442,10 @@ const Landing = () => {
                   <div className="img">
                     <Image className="avatar" alt="" src={Avatar} />
                   </div>
+                  <InView
+                    as="div"
+                    onChange={(inView, entry) => inView && setMenuActive(5)}
+                  />
                   <div className="info">
                     <p className="name">Nguyễn Minh Anh</p>
                     <p className="position">Nhân viên văn phòng</p>
@@ -491,10 +491,6 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          <InView
-            as="div"
-            onChange={(inView, entry) => inView && setMenuActive(5)}
-          />
         </div>
         <Footer />
       </div>

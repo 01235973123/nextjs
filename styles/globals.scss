@@ -607,7 +607,7 @@ table {
     .img {
       margin-left: 4%;
       text-align: center;
-      padding-right: 30px;
+      padding-right: 30px !important;
     }
     .avatar {
       width: 80px;
@@ -1088,7 +1088,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 30px;
+  bottom: 50px;
   right: 30px;
   background: linear-gradient(
     90.47deg,
