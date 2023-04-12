@@ -155,14 +155,14 @@ const Landing = () => {
               Hạn chế rủi ro
             </div>
           </div>
-          <InView
-            as="div"
-            onChange={(inView, entry) => inView && setMenuActive(6)}
-          />
           <Image
             className="Content3-icon content4-icon resize-custom"
             alt=""
             src={ImgAbout}
+          />
+          <InView
+            as="div"
+            onChange={(inView, entry) => inView && setMenuActive(6)}
           />
         </div>
         <div id="service"></div>
