@@ -135,10 +135,6 @@ const Landing = () => {
         >
           <div className="reason">
             <div className="reason-title">Lý do bạn nên chọn chúng tôi</div>
-            <InView
-              as="div"
-              onChange={(inView, entry) => inView && setMenuActive(6)}
-            />
             <div className="item">
               <Image alt="" src={Active} /> Giao hàng chuyên nghiệp
             </div>
@@ -159,6 +155,10 @@ const Landing = () => {
               Hạn chế rủi ro
             </div>
           </div>
+          <InView
+            as="div"
+            onChange={(inView, entry) => inView && setMenuActive(6)}
+          />
           <Image
             className="Content3-icon content4-icon resize-custom"
             alt=""
