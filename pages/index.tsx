@@ -419,7 +419,7 @@ const Landing = () => {
         </Swiper> */}
         </div>
         <div style={{ height: 80 }} id="client"></div>
-        <div className={`content-3 mb-10 ${menuActive !== 5 && "hidden"}`}>
+        <div className={`content-3 mb-10`}>
           <h3>Khách hàng nói về Phúc Long Express</h3>
         </div>
         <div className={`flex y-kien-kh`}>
