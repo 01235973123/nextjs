@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import RulesImg from "../assets/rules.svg";
 import Footer from "../components/Footer";
 import { InView } from "react-intersection-observer";
+import Social from "../components/Social";
 
 const Rules = () => {
   const [menuActive, setMenuActive] = useState(0);
@@ -137,6 +138,7 @@ const Rules = () => {
         </p>
       </div>
       <Footer />
+      <Social />
     </div>
   );
 };

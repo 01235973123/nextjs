@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import RulesImg from "../assets/rules.svg";
 import Footer from "../components/Footer";
 import { InView } from "react-intersection-observer";
+import Social from "../components/Social";
 
 const Support = () => {
   const [menuActive, setMenuActive] = useState(0);
@@ -38,6 +39,7 @@ const Support = () => {
         <p>Thứ 2 đến Chủ Nhật từ 8h30 đến 19h00 (Trừ các ngày lễ)</p>
       </div>
       <Footer />
+      <Social />
     </div>
   );
 };
