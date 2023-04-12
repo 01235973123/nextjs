@@ -82,7 +82,7 @@ const Landing = () => {
         onChange={(inView, entry) => inView && setMenuActive(1)}
       />
       <Header menuActive={menuActive} />
-      <div style={{ height: "100px" }} id="common"></div>
+      <div id="common"></div>
       <div className={`content`}>
         <div className={`content-1`}>
           <Image
@@ -349,7 +349,7 @@ const Landing = () => {
             src={Content4}
           />
         </div>
-        <div style={{ height: 100 }} id="about-us"></div>
+        <div id="about-us"></div>
         <div className={`content-3 content-5`} style={{ position: "relative" }}>
           <Image
             className="Content3-icon content5-icon"
@@ -422,7 +422,7 @@ const Landing = () => {
           </SwiperSlide>
         </Swiper> */}
         </div>
-        <div style={{ height: 80 }} id="client"></div>
+        <div id="client"></div>
         <div className={`content-3 mb-10`}>
           <h3>Khách hàng nói về Phúc Long Express</h3>
         </div>

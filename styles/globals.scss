@@ -877,7 +877,7 @@ table {
     font-size: 16px;
   }
   .content .content-1 .about-common {
-    margin-top: 80px;
+    margin-top: 0px;
   }
   .content .content-2 .block-country {
     width: 200px;
@@ -1288,5 +1288,23 @@ nav ul li a:hover {
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+#about-us {
+  height: 100px;
+  @media only screen and (max-width: 800px) {
+    height: 0px;
+  }
+}
+#client {
+  height: 80px;
+  @media only screen and (max-width: 800px) {
+    height: 0px;
+  }
+}
+#common {
+  height: 100px;
+  @media only screen and (max-width: 500px) {
+    height: 0px;
   }
 }
