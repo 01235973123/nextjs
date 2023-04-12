@@ -95,15 +95,15 @@ const Landing = () => {
           />
           <p className="text-1">Giới thiệu chung</p>
           <div className="br-1"></div>
-          <InView
-            as="div"
-            onChange={(inView, entry) => inView && setMenuActive(6)}
-          />
           <p className="text-2">
             Chúng tôi với đội ngũ chuyên nghiệp, trách nhiệm, nhiệt tình, lấy
             khách hàng là cốt lõi phát triển công ty, chúng tôi mong đợi sẽ đưa
             đến cho quý khách những trải nghiệm và dịch vụ tốt nhất.
           </p>
+          <InView
+            as="div"
+            onChange={(inView, entry) => inView && setMenuActive(6)}
+          />
           <div className="about-common">
             <div className="item">
               <Image className="icon" alt="" src={Tamnhin} />
