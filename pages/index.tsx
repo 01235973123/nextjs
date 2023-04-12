@@ -95,6 +95,10 @@ const Landing = () => {
           />
           <p className="text-1">Giới thiệu chung</p>
           <div className="br-1"></div>
+          <InView
+            as="div"
+            onChange={(inView, entry) => inView && setMenuActive(6)}
+          />
           <p className="text-2">
             Chúng tôi với đội ngũ chuyên nghiệp, trách nhiệm, nhiệt tình, lấy
             khách hàng là cốt lõi phát triển công ty, chúng tôi mong đợi sẽ đưa
@@ -108,10 +112,6 @@ const Landing = () => {
                 Đến năm 2025 trở thành công ty hàng đầu về dịch vụ mua hộ và vận
                 chuyển từ UK, EU về Việt Nam.
               </p>
-              <InView
-                as="div"
-                onChange={(inView, entry) => inView && setMenuActive(6)}
-              />
             </div>
             <div className="item">
               <Image className="icon" alt="" src={Sumenh} />
@@ -296,9 +296,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div
-          className={`content-3 nowrap bg-img`}
-        >
+        <div className={`content-3 nowrap bg-img`}>
           <div>
             <h3 className="text-white">
               Tải app để trải nghiệm dịch vụ của chúng tôi.
