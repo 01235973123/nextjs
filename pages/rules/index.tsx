@@ -19,7 +19,7 @@ const Rules = () => {
         Điều khoản và chính sách sử dụng
         <Image className="RulesImg-icon" alt="" src={RulesImg} />
       </div>
-      <div className="description">
+      <div className="description descr-rule">
         <p className="font-bold ">
           Bằng việc chấp nhận sử dụng Dịch vụ của Phúc Long Express, Khách hàng
           hiểu và đồng ý với chính sách về Quyền và nghĩa vụ được nêu dưới đây.
