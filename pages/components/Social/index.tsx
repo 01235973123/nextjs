@@ -26,7 +26,7 @@ const Social = () => {
     <Popover
       className="social-popover"
       content={content}
-      placement="topLeft"
+      placement="top"
       trigger="click"
     >
       <Button type="primary">

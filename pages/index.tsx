@@ -257,7 +257,7 @@ const Landing = () => {
           </div>
         </div>
         <div id="news" style={{ height: 80 }}></div>
-        <div className={`content-3 ${menuActive !== 3 && "hidden"}`}>
+        <div className={`content-3`}>
           <Image className="Content3-icon" alt="" src={Content3} />
           <div className="news">
             <h3>Tin tức</h3>
