@@ -353,6 +353,10 @@ const Landing = () => {
             src={Content5}
           />
           <div className="network">
+          <InView
+            as="div"
+            onChange={(inView, entry) => inView && setMenuActive(4)}
+          />
             <h3>Mạng lưới đối tác lớn</h3>
             <div className="br"></div>
             <p className="descrip">
@@ -438,10 +442,6 @@ const Landing = () => {
                   <div className="img">
                     <Image className="avatar" alt="" src={Avatar} />
                   </div>
-                  <InView
-                    as="div"
-                    onChange={(inView, entry) => inView && setMenuActive(5)}
-                  />
                   <div className="info">
                     <p className="name">Nguyễn Minh Anh</p>
                     <p className="position">Nhân viên văn phòng</p>
@@ -454,6 +454,10 @@ const Landing = () => {
                 </div>
               </div>
             </div>
+            <InView
+            as="div"
+            onChange={(inView, entry) => inView && setMenuActive(5)}
+          />
           </div>
           <div className={`content-6`}>
             <Image
