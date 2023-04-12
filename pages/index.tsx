@@ -297,7 +297,7 @@ const Landing = () => {
           </div>
         </div>
         <div
-          className={`content-3 nowrap bg-img ${menuActive !== 3 && "hidden"}`}
+          className={`content-3 nowrap bg-img`}
         >
           <div>
             <h3 className="text-white">
@@ -353,16 +353,16 @@ const Landing = () => {
             src={Content5}
           />
           <div className="network">
-            <InView
-              as="div"
-              onChange={(inView, entry) => inView && setMenuActive(4)}
-            />
             <h3>Mạng lưới đối tác lớn</h3>
             <div className="br"></div>
             <p className="descrip">
               Chúng tôi đang hợp tác với rất nhiều đối tác vận chuyển uy tín,
               chất lượng và tốc độ, đảm bảo đem đến chất lượng tốt nhất cho
               khách hàng.
+              <InView
+                as="div"
+                onChange={(inView, entry) => inView && setMenuActive(4)}
+              />
             </p>
           </div>
           <div style={{ position: "absolute", top: "50%" }}></div>
