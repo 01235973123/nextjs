@@ -93,10 +93,6 @@ const Landing = () => {
             alt=""
             src={Dotblue}
           />
-          <InView
-            as="div"
-            onChange={(inView, entry) => inView && setMenuActive(6)}
-          />
           <p className="text-1">Giới thiệu chung</p>
           <div className="br-1"></div>
           <p className="text-2">
@@ -112,6 +108,10 @@ const Landing = () => {
                 Đến năm 2025 trở thành công ty hàng đầu về dịch vụ mua hộ và vận
                 chuyển từ UK, EU về Việt Nam.
               </p>
+              <InView
+                as="div"
+                onChange={(inView, entry) => inView && setMenuActive(6)}
+              />
             </div>
             <div className="item">
               <Image className="icon" alt="" src={Sumenh} />
@@ -353,10 +353,10 @@ const Landing = () => {
             src={Content5}
           />
           <div className="network">
-          <InView
-            as="div"
-            onChange={(inView, entry) => inView && setMenuActive(4)}
-          />
+            <InView
+              as="div"
+              onChange={(inView, entry) => inView && setMenuActive(4)}
+            />
             <h3>Mạng lưới đối tác lớn</h3>
             <div className="br"></div>
             <p className="descrip">
@@ -455,9 +455,9 @@ const Landing = () => {
               </div>
             </div>
             <InView
-            as="div"
-            onChange={(inView, entry) => inView && setMenuActive(5)}
-          />
+              as="div"
+              onChange={(inView, entry) => inView && setMenuActive(5)}
+            />
           </div>
           <div className={`content-6`}>
             <Image
