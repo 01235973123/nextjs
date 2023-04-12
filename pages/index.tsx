@@ -166,7 +166,7 @@ const Landing = () => {
           />
         </div>
         <div id="service"></div>
-        <div className={`content-1  ${menuActive !== 2 && "hidden"}`}>
+        <div className={`content-1`}>
           <Image
             className="dot"
             style={{ top: "-80%", left: "40%" }}
