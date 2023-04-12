@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
+import QRCode from "qrcode.react";
 import Image from "next/image";
 import Head from "next/head";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -305,32 +306,30 @@ const Landing = () => {
               lòng tải app để trải nghiệm ngay:
             </p>
             <div className="flex justify-evenly mt-10">
-              <div>
-                <Image
-                  className="dowload-icon"
-                  width={250}
-                  height={250}
-                  alt=""
-                  src={IosQr}
+              <div className="flex flex-col items-center justify-center">
+                <QRCode
+                  style={{borderRadius: 5}}
+                  value={
+                    "https://apps.apple.com/vn/app/phuclong-express/id6447059509"
+                  }
                 />
-                <p className="descrip text-center text-black">
-                  Hệ điều hành IOS
+                <p className="descrip text-center text-white">
+                  IOS
                 </p>
                 <InView
                   as="div"
                   onChange={(inView, entry) => inView && setMenuActive(3)}
                 />
               </div>
-              <div>
-                <Image
-                  className="dowload-icon"
-                  width={250}
-                  height={250}
-                  alt=""
-                  src={AndroidQr}
+              <div className="flex flex-col items-center justify-center">
+                <QRCode
+                 style={{borderRadius: 5}}
+                  value={
+                    "https://play.google.com/store/apps/details?id=com.plelogistic.phuclongexpress"
+                  }
                 />
-                <p className="descrip text-center text-black">
-                  Hệ điều hành Android
+                <p className="descrip text-center text-white">
+                  Android
                 </p>
               </div>
             </div>

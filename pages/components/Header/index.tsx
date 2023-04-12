@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import QRCode from "qrcode.react";
 import Image from "next/image";
 import MenuToggle from "../Menu";
 import Onboarding from "../../assets/onboarding.svg";
@@ -30,7 +31,7 @@ const Header = (props: any) => {
       />
       <Image className="bg-icon" alt="" src={Bg} />
       <Image className="bg-icon bg-2" alt="" src={Bg2} />
-      <div className={`header-one top ${props.menuActive > 1 && 'scroll'}`}>
+      <div className={`header-one top ${props.menuActive > 1 && "scroll"}`}>
         <div className="left cursor-pointer" onClick={() => redirect("/")}>
           <Image className="logo-icon" alt="" src={Logo} />
           <h1 className="title">Phúc Long Express</h1>
@@ -46,7 +47,14 @@ const Header = (props: any) => {
           <div className="chng-ti-vi">{`Tải App để trải nghiệm dịch vụ của chúng tôi `}</div>
           <div className="dowload">
             <Tooltip
-              title={<Image className="dowload-icon" alt="" src={AndroidQr} />}
+              title={
+                <QRCode
+                  style={{ borderRadius: 5 }}
+                  value={
+                    "https://play.google.com/store/apps/details?id=com.plelogistic.phuclongexpress"
+                  }
+                />
+              }
               color={
                 "linear-gradient(183.41deg, #f09e3e -8.57%, #ffd94f 82.96%)"
               }
@@ -60,7 +68,14 @@ const Header = (props: any) => {
               </a>
             </Tooltip>
             <Tooltip
-              title={<Image className="dowload-icon" alt="" src={IosQr} />}
+              title={
+                <QRCode
+                  style={{ borderRadius: 5 }}
+                  value={
+                    "https://apps.apple.com/vn/app/phuclong-express/id6447059509"
+                  }
+                />
+              }
               color={
                 "linear-gradient(183.41deg, #f09e3e -8.57%, #ffd94f 82.96%)"
               }
