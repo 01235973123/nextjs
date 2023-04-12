@@ -81,7 +81,7 @@ const Landing = () => {
       <Header menuActive={menuActive} />
       <div style={{ height: "100px" }} id="common"></div>
       <div className={`content`}>
-        <div className={`content-1 ${menuActive !== 6 && "hidden"}`}>
+        <div className={`content-1`}>
           <Image
             className="dot"
             style={{ top: "50%", left: "65%" }}
