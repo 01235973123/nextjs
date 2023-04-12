@@ -1120,7 +1120,6 @@ nav ul li a:hover {
   }
   .title-rule {
     color: #f09e3e;
-
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -1128,6 +1127,9 @@ nav ul li a:hover {
     text-align: center;
     width: 100% !important;
     cursor: pointer;
+    @media only screen and (max-width: 900px) {
+      font-size: 28px;
+    }
   }
   .dieu-khoan {
     text-align: center;
