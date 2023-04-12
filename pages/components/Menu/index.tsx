@@ -33,7 +33,7 @@ const MenuToggle = (props: any) => {
       <Head>
         <meta name="description" content="Phúc Long Express" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/logo-2.png" />
         <title>Phúc Long Express</title>
       </Head>
       <div className="menu">
