@@ -130,11 +130,13 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div
-          className={`content-3 nowrap bg-img ${menuActive !== 6 && "hidden"}`}
-        >
+        <div className={`content-3 nowrap bg-img`}>
           <div className="reason">
             <div className="reason-title">Lý do bạn nên chọn chúng tôi</div>
+            <InView
+              as="div"
+              onChange={(inView, entry) => inView && setMenuActive(6)}
+            />
             <div className="item">
               <Image alt="" src={Active} /> Giao hàng chuyên nghiệp
             </div>
@@ -159,10 +161,6 @@ const Landing = () => {
             className="Content3-icon content4-icon resize-custom"
             alt=""
             src={ImgAbout}
-          />
-          <InView
-            as="div"
-            onChange={(inView, entry) => inView && setMenuActive(6)}
           />
         </div>
         <div id="service"></div>
