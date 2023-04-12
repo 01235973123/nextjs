@@ -30,9 +30,12 @@ import New1 from "./assets/new-1.svg";
 import New2 from "./assets/new-2.svg";
 import AndroidQr from "./assets/Android-qr.svg";
 import IosQr from "./assets/IOS-qr.svg";
+import Ios from "./assets/ios.svg";
 import Avatar from "./assets/avatar.svg";
 import Service from "./assets/service.svg";
 import Dotblue from "./assets/dot-blue.svg";
+import Logo from "./assets/logo.svg";
+import GooglePlay from "./assets/google-play.svg";
 import ImgAbout from "./assets/img-about.svg";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -305,32 +308,38 @@ const Landing = () => {
               Với những tính năng tiện tích, sử dụng đơn giản, nhanh chóng. Vui
               lòng tải app để trải nghiệm ngay:
             </p>
-            <div className="flex justify-evenly mt-10">
+            <div className="flex justify-evenly mt-10 flex-wrap">
               <div className="flex flex-col items-center justify-center">
+              <a
+                href="https://apps.apple.com/vn/app/phuclong-express/id6447059509"
+                target="_blank"
+              >
+                <Image className="dowload-icon ios" alt="" src={Ios} />
+              </a>
                 <QRCode
-                  style={{borderRadius: 5}}
+                  style={{borderRadius: 5, marginBottom: 20}}
                   value={
                     "https://apps.apple.com/vn/app/phuclong-express/id6447059509"
                   }
                 />
-                <p className="descrip text-center text-white">
-                  IOS
-                </p>
                 <InView
                   as="div"
                   onChange={(inView, entry) => inView && setMenuActive(3)}
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.plelogistic.phuclongexpress"
+                target="_blank"
+              >
+                <Image className="dowload-icon" alt="" src={GooglePlay} />
+              </a>
                 <QRCode
-                 style={{borderRadius: 5}}
+                 style={{borderRadius: 5, marginBottom: 20}}
                   value={
                     "https://play.google.com/store/apps/details?id=com.plelogistic.phuclongexpress"
                   }
                 />
-                <p className="descrip text-center text-white">
-                  Android
-                </p>
               </div>
             </div>
           </div>

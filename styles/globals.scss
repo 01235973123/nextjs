@@ -457,6 +457,14 @@ table {
   }
   justify-content: space-between;
   flex-wrap: wrap;
+  .dowload-icon {
+    width: 150px;
+    background: black;
+    padding: 14px;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
   a {
     text-decoration: none;
     transition: all 0.3s ease;
