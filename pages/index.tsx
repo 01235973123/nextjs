@@ -64,7 +64,9 @@ const Landing = () => {
   const [width, setWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
   );
+
   const [menuActive, setMenuActive] = useState(1);
+  const [displayUi, setDisplayUi] = useState(1);
 
   useEffect(() => {
     function handleResize() {
@@ -84,7 +86,7 @@ const Landing = () => {
       <Header menuActive={menuActive} />
       <div id="common"></div>
       <div className={`content`}>
-        <div className={`content-1`}>
+        <div className={`content-1 ${displayUi < 2 && "hidden"}`}>
           <Image
             className="dot"
             style={{ top: "50%", left: "65%" }}
@@ -106,7 +108,12 @@ const Landing = () => {
           </p>
           <InView
             as="div"
-            onChange={(inView, entry) => inView && setMenuActive(6)}
+            onChange={(inView, entry) => {
+              if (inView) {
+                setMenuActive(6);
+                displayUi < 9 && setDisplayUi(displayUi + 1);
+              }
+            }}
           />
           <div className="about-common">
             <div className="item">
@@ -134,12 +141,17 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className={`content-3 nowrap bg-img`}>
+        <div className={`content-3 nowrap bg-img ${displayUi < 3 && "hidden"}`}>
           <div className="reason">
             <div className="reason-title">Lý do bạn nên chọn chúng tôi</div>
             <InView
               as="div"
-              onChange={(inView, entry) => inView && setMenuActive(6)}
+              onChange={(inView, entry) => {
+                if (inView) {
+                  setMenuActive(6);
+                  displayUi < 9 && setDisplayUi(displayUi + 1);
+                }
+              }}
             />
             <div className="item">
               <Image alt="" src={Active} /> Giao hàng chuyên nghiệp
@@ -168,7 +180,7 @@ const Landing = () => {
           />
         </div>
         <div id="service"></div>
-        <div className={`content-1`}>
+        <div className={`content-1 ${displayUi < 4 && "hidden"}`}>
           <Image
             className="dot"
             style={{ top: "-80%", left: "40%" }}
@@ -178,7 +190,12 @@ const Landing = () => {
           <p className="text-1">Quốc gia hỗ trợ dịch vụ</p>
           <InView
             as="div"
-            onChange={(inView, entry) => inView && setMenuActive(2)}
+            onChange={(inView, entry) => {
+              if (inView) {
+                setMenuActive(2);
+                displayUi < 9 && setDisplayUi(displayUi + 1);
+              }
+            }}
           />
           <div className="br-1"></div>
           <p className="text-2">
@@ -261,7 +278,15 @@ const Landing = () => {
           </div>
         </div>
         <div id="news" style={{ height: 80 }}></div>
-        <div className={`content-3`}>
+        <div className={`content-3 ${displayUi < 5 && "hidden"}`}>
+          <InView
+            as="div"
+            onChange={(inView, entry) => {
+              if (inView) {
+                displayUi < 9 && setDisplayUi(displayUi + 1);
+              }
+            }}
+          />
           <Image className="Content3-icon" alt="" src={Content3} />
           <div className="news">
             <h3>Tin tức</h3>
@@ -281,7 +306,11 @@ const Landing = () => {
             </div>
             <InView
               as="div"
-              onChange={(inView, entry) => inView && setMenuActive(3)}
+              onChange={(inView, entry) => {
+                if (inView) {
+                  setMenuActive(3);
+                }
+              }}
             />
             <div className="block-new">
               <Image className="new-icon" alt="" src={New2} />
@@ -298,7 +327,15 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className={`content-3 nowrap bg-img`}>
+        <div className={`content-3 nowrap bg-img ${displayUi < 6 && "hidden"}`}>
+          <InView
+            as="div"
+            onChange={(inView, entry) => {
+              if (inView) {
+                displayUi < 9 && setDisplayUi(displayUi + 1);
+              }
+            }}
+          />
           <div>
             <h3 className="text-white">
               Tải app để trải nghiệm dịch vụ của chúng tôi.
@@ -310,14 +347,14 @@ const Landing = () => {
             </p>
             <div className="flex justify-evenly mt-10 flex-wrap">
               <div className="flex flex-col items-center justify-center">
-              <a
-                href="https://apps.apple.com/vn/app/phuclong-express/id6447059509"
-                target="_blank"
-              >
-                <Image className="dowload-icon ios" alt="" src={Ios} />
-              </a>
+                <a
+                  href="https://apps.apple.com/vn/app/phuclong-express/id6447059509"
+                  target="_blank"
+                >
+                  <Image className="dowload-icon ios" alt="" src={Ios} />
+                </a>
                 <QRCode
-                  style={{borderRadius: 5, marginBottom: 20}}
+                  style={{ borderRadius: 5, marginBottom: 20 }}
                   value={
                     "https://apps.apple.com/vn/app/phuclong-express/id6447059509"
                   }
@@ -328,14 +365,14 @@ const Landing = () => {
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-              <a
-                href="https://play.google.com/store/apps/details?id=com.plelogistic.phuclongexpress"
-                target="_blank"
-              >
-                <Image className="dowload-icon" alt="" src={GooglePlay} />
-              </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.plelogistic.phuclongexpress"
+                  target="_blank"
+                >
+                  <Image className="dowload-icon" alt="" src={GooglePlay} />
+                </a>
                 <QRCode
-                 style={{borderRadius: 5, marginBottom: 20}}
+                  style={{ borderRadius: 5, marginBottom: 20 }}
                   value={
                     "https://play.google.com/store/apps/details?id=com.plelogistic.phuclongexpress"
                   }
@@ -350,7 +387,18 @@ const Landing = () => {
           />
         </div>
         <div id="about-us"></div>
-        <div className={`content-3 content-5`} style={{ position: "relative" }}>
+        <div
+          className={`content-3 content-5 ${displayUi < 7 && "hidden"}`}
+          style={{ position: "relative" }}
+        >
+           <InView
+                as="div"
+                onChange={(inView, entry) => {
+                  if (inView) {
+                    displayUi < 9 && setDisplayUi(displayUi + 1);
+                  }
+                }}
+              />
           <Image
             className="Content3-icon content5-icon"
             alt=""
@@ -365,7 +413,11 @@ const Landing = () => {
               khách hàng.
               <InView
                 as="div"
-                onChange={(inView, entry) => inView && setMenuActive(4)}
+                onChange={(inView, entry) => {
+                  if (inView) {
+                    setMenuActive(4);
+                  }
+                }}
               />
             </p>
           </div>
@@ -423,8 +475,16 @@ const Landing = () => {
         </Swiper> */}
         </div>
         <div id="client"></div>
-        <div className={`content-3 mb-10`}>
+        <div className={`content-3 mb-10 ${displayUi < 8 && "hidden"}`}>
           <h3>Khách hàng nói về Phúc Long Express</h3>
+          <InView
+              as="div"
+              onChange={(inView, entry) => {
+                if (inView) {
+                  displayUi < 9 && setDisplayUi(displayUi + 1);
+                }
+              }}
+            />
         </div>
         <div className={`flex y-kien-kh`}>
           <div className={`content-6`}>
@@ -460,7 +520,11 @@ const Landing = () => {
             </div>
             <InView
               as="div"
-              onChange={(inView, entry) => inView && setMenuActive(5)}
+              onChange={(inView, entry) => {
+                if (inView) {
+                  setMenuActive(5);
+                }
+              }}
             />
           </div>
           <div className={`content-6`}>
