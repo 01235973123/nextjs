@@ -328,16 +328,16 @@ const Landing = () => {
           </div>
         </div>
         <div className={`content-3 nowrap bg-img ${displayUi < 6 && "hidden"}`}>
-          <InView
-            as="div"
-            onChange={(inView, entry) => {
-              if (inView) {
-                displayUi < 9 && setDisplayUi(displayUi + 1);
-              }
-            }}
-          />
           <div>
             <h3 className="text-white">
+              <InView
+                as="div"
+                onChange={(inView, entry) => {
+                  if (inView) {
+                    displayUi < 9 && setDisplayUi(displayUi + 1);
+                  }
+                }}
+              />
               Tải app để trải nghiệm dịch vụ của chúng tôi.
             </h3>
             <div className="br"></div>
@@ -391,14 +391,14 @@ const Landing = () => {
           className={`content-3 content-5 ${displayUi < 7 && "hidden"}`}
           style={{ position: "relative" }}
         >
-           <InView
-                as="div"
-                onChange={(inView, entry) => {
-                  if (inView) {
-                    displayUi < 9 && setDisplayUi(displayUi + 1);
-                  }
-                }}
-              />
+          <InView
+            as="div"
+            onChange={(inView, entry) => {
+              if (inView) {
+                displayUi < 9 && setDisplayUi(displayUi + 1);
+              }
+            }}
+          />
           <Image
             className="Content3-icon content5-icon"
             alt=""
@@ -478,13 +478,13 @@ const Landing = () => {
         <div className={`content-3 mb-10 ${displayUi < 8 && "hidden"}`}>
           <h3>Khách hàng nói về Phúc Long Express</h3>
           <InView
-              as="div"
-              onChange={(inView, entry) => {
-                if (inView) {
-                  displayUi < 9 && setDisplayUi(displayUi + 1);
-                }
-              }}
-            />
+            as="div"
+            onChange={(inView, entry) => {
+              if (inView) {
+                displayUi < 9 && setDisplayUi(displayUi + 1);
+              }
+            }}
+          />
         </div>
         <div className={`flex y-kien-kh`}>
           <div className={`content-6`}>
