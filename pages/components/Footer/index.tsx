@@ -69,12 +69,12 @@ const Footer = () => {
       <div className="about">
         <p className="title">Hỗ trợ khách hàng</p>
         <p>
-          <Link href="/support" onClick={scrollTop} className="item">
+          <Link href="/support" className="item">
             Trung tâm hỗ trợ{" "}
           </Link>
         </p>
         <p>
-          <Link href="/support" onClick={scrollTop} className="item">
+          <Link href="/support-vtp" className="item">
             Hỗ trợ liên hệ{" "}
           </Link>
         </p>

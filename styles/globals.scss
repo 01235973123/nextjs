@@ -1120,6 +1120,12 @@ nav ul li a:hover {
   }
   .descr-rule {
     padding: 0 7% 0 15% !important;
+    .button {
+      background: linear-gradient(90deg,#f09e3e 15.62%, #aaaa39 100%);
+      &:hover {
+        background: linear-gradient(90deg, #aaaa39 15.62%, #f09e3e 100%);
+      }
+    }
   }
   .title-rule {
     color: #f09e3e;
@@ -1307,4 +1313,7 @@ nav ul li a:hover {
   @media only screen and (max-width: 500px) {
     height: 0px;
   }
+}
+.ant-input:hover {
+  border-color: #fb8700;
 }
