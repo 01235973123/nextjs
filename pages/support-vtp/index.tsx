@@ -46,7 +46,6 @@ const SupportVtp = () => {
           onChange={(inView, entry) => inView && setMenuActive(10)}
         />
         Tổng Công ty Cổ phần Bưu chính Viettel
-        <Image className="RulesImg-icon" alt="" src={RulesImg} />
       </div>
       <div className="description descr-rule">
         <p><span className="font-bold">Trụ Sở Chính:</span> Km2. Đại lộ Thăng Long, phường Mễ Trì, quận Nam Từ Liêm, TP.Hà Nội</p>
@@ -108,7 +107,7 @@ const SupportVtp = () => {
           >
             <TextArea rows={4} maxLength={1000} />
           </Form.Item>
-          <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+          <Form.Item className="text-center" wrapperCol={{ offset: 0, span: 16 }}>
             <Button type="primary" htmlType="submit" className="button">
               Gửi ngay
             </Button>
