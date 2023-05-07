@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import axios from "axios";
+import { InView } from "react-intersection-observer";
 import Header from "../components/Header";
 import RulesImg from "../assets/rules.svg";
 import Footer from "../components/Footer";
-import { InView } from "react-intersection-observer";
 import Social from "../components/Social";
 import { Button, Form, Input, notification, Spin } from 'antd';
 import { NotificationPlacement } from "antd/es/notification/interface";
-import axios from "axios";
+import Head from "next/head";
 
 const { TextArea } = Input;
 
@@ -29,7 +30,7 @@ const SupportVtp = () => {
         form.resetFields();
         openNotification('topRight', response?.data?.message, 1);
       })
-      .catch(function (error) {
+      .catch(function (error: { message: string; }) {
         openNotification('topRight', error?.message, 2);
       });
   };
@@ -49,13 +50,19 @@ const SupportVtp = () => {
 
   return (
     <Spin spinning={loading} size="large">
+      <Head>
+        <meta name="description" content="Phúc Long Express" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/logo-2.png" />
+        <title>Phúc Long Express</title>
+      </Head>
       <div className="rules">
         {contextHolder}
         <InView
           as="div"
           onChange={(inView, entry) => inView && setMenuActive(0)}
         />
-        <Header menuActive={menuActive} />
+        {/* <Header menuActive={menuActive} /> */}
         <div className="dieu-khoan title-rule">
           <InView
             as="div"
@@ -76,9 +83,9 @@ const SupportVtp = () => {
           <Form
             name="basic"
             form={form}
-            labelCol={{ span: 3 }}
+            labelCol={{ span: 5 }}
             labelAlign="left"
-            wrapperCol={{ span: 16 }}
+            wrapperCol={{ span: 14 }}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
             autoComplete="off"
@@ -124,7 +131,7 @@ const SupportVtp = () => {
             >
               <TextArea rows={4} maxLength={500} />
             </Form.Item>
-            <Form.Item className="text-center" wrapperCol={{ offset: 0, span: 16 }}>
+            <Form.Item className="text-center" wrapperCol={{ offset: 0, span: 0 }}>
               <Button type="primary" htmlType="submit" className="button">
                 Gửi ngay
               </Button>

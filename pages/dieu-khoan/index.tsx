@@ -1,21 +1,28 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import RulesImg from "../assets/rules.svg";
 import Footer from "../components/Footer";
 import { InView } from "react-intersection-observer";
 import Social from "../components/Social";
+import Head from "next/head";
 
 const Rules = () => {
   const [menuActive, setMenuActive] = useState(0);
 
   return (
     <div className="rules">
+      <Head>
+        <meta name="description" content="Phúc Long Express" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/logo-2.png" />
+        <title>Phúc Long Express</title>
+      </Head>
       <InView
         as="div"
         onChange={(inView, entry) => inView && setMenuActive(0)}
       />
-      <Header menuActive={menuActive} />
+      {/* <Header menuActive={menuActive} /> */}
       <div className="dieu-khoan title-rule">
         Điều khoản và chính sách sử dụng
         <Image className="RulesImg-icon" alt="" src={RulesImg} />

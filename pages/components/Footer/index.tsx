@@ -60,22 +60,26 @@ const Footer = () => {
         <p className="title">Về Phúc Long Express</p>
         <p className="item">Giới thiệu</p>
         <p className="item">Tin tức</p>
-        <p className="item">Tuyển dụng</p>
+        <p className="item">
+          <Link href="/support-vtp" className="item" target="_blank">
+            Tuyển dụng{" "}
+          </Link>
+        </p>
         <p className="item">Apps</p>
-        <Link href="/rules" onClick={scrollTop} className="item">
+        <Link href="/dieu-khoan" onClick={scrollTop} className="item" target="_blank">
           Chính sách và điều khoản
         </Link>
       </div>
       <div className="about">
         <p className="title">Hỗ trợ khách hàng</p>
         <p>
-          <Link href="/support" className="item">
+          <Link href="/support" className="item" target="_blank">
             Trung tâm hỗ trợ{" "}
           </Link>
         </p>
         <p>
-          <Link href="/support-vtp" className="item">
-            Hỗ trợ liên hệ{" "}
+          <Link href="/support-vtp" className="item" target="_blank">
+            Hỗ trợ{" "}
           </Link>
         </p>
       </div>
