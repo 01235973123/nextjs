@@ -19,13 +19,18 @@ const customConfig = {
     }
 };
 
+interface InputRef {
+    value: string;
+    focus: () => void;
+}
+
 const SupportVtp = () => {
     const [form] = Form.useForm();
     const [api, contextHolder] = notification.useNotification();
     // const [menuActive, setMenuActive] = useState(0);
     const [loading, setLoading] = useState(false);
     const [errorField, setErrorField] = useState(null);
-    const errorFieldRef: RefObject<HTMLInputElement> | null = useRef(null);
+    const errorFieldRef: RefObject<InputRef> = useRef(null);
 
     useEffect(() => {
         if (errorFieldRef.current) {
