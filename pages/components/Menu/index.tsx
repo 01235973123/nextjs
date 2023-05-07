@@ -35,6 +35,11 @@ const MenuToggle = (props: any) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/logo-2.png" />
         <title>Phúc Long Express</title>
+        <meta property="og:title" content="Phúc Long Express" />
+        <meta property="og:description" content="Chúng tôi với đội ngũ chuyên nghiệp, trách nhiệm, nhiệt tình, lấy khách hàng là cốt lõi phát triển công ty, chúng tôi mong đợi sẽ đưa đến cho quý khách những trải nghiệm và dịch vụ tốt nhất." />
+        <meta property="og:image" content="/logo-2.png" />
+        <meta property="og:url" content="https://ple-logistics.com" />
+        <meta property="og:type" content="website" />
       </Head>
       <div className="menu">
         <div
