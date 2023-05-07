@@ -1319,6 +1319,17 @@ nav ul li a:hover {
 }
 @media (min-width: 575px) {
   .button-submit {
-    margin-left: 20%;
+    margin-left: 21%;
+  }
+}
+
+.lien-he {
+  color: #f09e3e;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 44px;
+  cursor: pointer;
+  @media only screen and (max-width: 500px) {
+    font-size: 16px;
   }
 }

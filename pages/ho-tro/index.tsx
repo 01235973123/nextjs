@@ -63,13 +63,13 @@ const SupportVtp = () => {
           onChange={(inView, entry) => inView && setMenuActive(0)}
         />
         {/* <Header menuActive={menuActive} /> */}
-        <div className="dieu-khoan title-rule">
+        {/* <div className="dieu-khoan title-rule">
           <InView
             as="div"
             onChange={(inView, entry) => inView && setMenuActive(10)}
           />
           Thông tin liên hệ
-        </div>
+        </div> */}
         <div className="description descr-rule">
           {/* <p><span className="font-bold">Trụ Sở Chính:</span> Km2. Đại lộ Thăng Long, phường Mễ Trì, quận Nam Từ Liêm, TP.Hà Nội</p>
           <p><span className="font-bold">Văn phòng miền nam:</span> 161-163 Trần Quốc Thảo, P9, Quận 3, TP.HCM</p>
@@ -79,7 +79,7 @@ const SupportVtp = () => {
           <p><span className="font-bold">Hợp tác kinh doanh</span></p>
           <p><span className="font-bold">Hotline:</span> 0983653311</p>
           <p><span className="font-bold">Email:</span> kinhdoanh@viettelpost.com.vn</p> */}
-          <p><span className="font-bold">LIÊN HỆ NGAY VỚI VIETTEL POST</span></p>
+          <p className="mt-20"><span className="font-bold lien-he">LIÊN HỆ NGAY VỚI PHÚC LONG EXPRESS</span></p>
           <Form
             name="basic"
             form={form}
