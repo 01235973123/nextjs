@@ -25,7 +25,7 @@ const SupportVtp = () => {
     // const [menuActive, setMenuActive] = useState(0);
     const [loading, setLoading] = useState(false);
     const [errorField, setErrorField] = useState(null);
-    const errorFieldRef = useRef(null);
+    const errorFieldRef = useRef<HTMLInputElement | null>(null);
 
     useEffect(() => {
         if (errorFieldRef.current) {
