@@ -553,7 +553,7 @@ const Landing = () => {
                 </div>
                 <div className="describe">
                   {`"Với tinh thần trách nhiệm cao, nhân viên tại PLExpress đã hỗ
-                  trợ tôi rất tận tâm và chu đáo. Tôi thấy thật đúng đắng khi
+                  trợ tôi rất tận tâm và chu đáo. Tôi thấy thật đúng đắn khi
                   chọn PLExpress là người bạn đáng tin cậy trong những năm qua."`}
                 </div>
               </div>
