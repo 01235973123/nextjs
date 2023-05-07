@@ -68,17 +68,17 @@ const SupportVtp = () => {
             as="div"
             onChange={(inView, entry) => inView && setMenuActive(10)}
           />
-          Tổng Công ty Cổ phần Bưu chính Viettel
+          Thông tin liên hệ
         </div>
         <div className="description descr-rule">
-          <p><span className="font-bold">Trụ Sở Chính:</span> Km2. Đại lộ Thăng Long, phường Mễ Trì, quận Nam Từ Liêm, TP.Hà Nội</p>
+          {/* <p><span className="font-bold">Trụ Sở Chính:</span> Km2. Đại lộ Thăng Long, phường Mễ Trì, quận Nam Từ Liêm, TP.Hà Nội</p>
           <p><span className="font-bold">Văn phòng miền nam:</span> 161-163 Trần Quốc Thảo, P9, Quận 3, TP.HCM</p>
           <p><span className="font-bold">Số Điện Thoại Liên Hệ:</span> 19008095</p>
           <p><span className="font-bold">Email:</span> cskh@viettel.com.vn</p>
           <p><span className="font-bold">Website:</span> viettelpost.com.vn</p>
           <p><span className="font-bold">Hợp tác kinh doanh</span></p>
           <p><span className="font-bold">Hotline:</span> 0983653311</p>
-          <p><span className="font-bold">Email:</span> kinhdoanh@viettelpost.com.vn</p>
+          <p><span className="font-bold">Email:</span> kinhdoanh@viettelpost.com.vn</p> */}
           <p><span className="font-bold">LIÊN HỆ NGAY VỚI VIETTEL POST</span></p>
           <Form
             name="basic"
@@ -131,7 +131,7 @@ const SupportVtp = () => {
             >
               <TextArea rows={4} maxLength={500} />
             </Form.Item>
-            <Form.Item className="text-center" wrapperCol={{ offset: 0, span: 0 }}>
+            <Form.Item className="button-submit" wrapperCol={{ offset: 0, span: 0 }}>
               <Button type="primary" htmlType="submit" className="button">
                 Gửi ngay
               </Button>

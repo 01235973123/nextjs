@@ -73,12 +73,12 @@ const Footer = () => {
       <div className="about">
         <p className="title">Hỗ trợ khách hàng</p>
         <p>
-          <Link href="/support" className="item" target="_blank">
+          <Link href="/lien-he" className="item" target="_blank">
             Trung tâm hỗ trợ{" "}
           </Link>
         </p>
         <p>
-          <Link href="/support-vtp" className="item" target="_blank">
+          <Link href="/ho-tro" className="item" target="_blank">
             Hỗ trợ{" "}
           </Link>
         </p>

@@ -1317,3 +1317,8 @@ nav ul li a:hover {
 .ant-input:hover {
   border-color: #fb8700;
 }
+@media (min-width: 575px) {
+  .button-submit {
+    margin-left: 20%;
+  }
+}
