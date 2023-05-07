@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, RefObject } from "react";
 import Image from "next/image";
 import axios from "axios";
 import { InView } from "react-intersection-observer";
@@ -25,7 +25,7 @@ const SupportVtp = () => {
     // const [menuActive, setMenuActive] = useState(0);
     const [loading, setLoading] = useState(false);
     const [errorField, setErrorField] = useState(null);
-    const errorFieldRef = useRef<HTMLInputElement | null>(null);
+    const errorFieldRef: RefObject<HTMLInputElement> = useRef(null);
 
     useEffect(() => {
         if (errorFieldRef.current) {
