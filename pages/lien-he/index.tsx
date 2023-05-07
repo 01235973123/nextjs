@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import Social from "../components/Social";
 
 const Support = () => {
-  const [menuActive, setMenuActive] = useState(0);
+  // const [menuActive, setMenuActive] = useState(0);
 
   return (
     <div className="rules">
@@ -18,16 +18,16 @@ const Support = () => {
         <link rel="icon" href="/logo-2.png" />
         <title>Phúc Long Express</title>
       </Head>
-      <InView
+      {/* <InView
         as="div"
         onChange={(inView, entry) => inView && setMenuActive(0)}
-      />
+      /> */}
       {/* <Header menuActive={menuActive} /> */}
       <div className="dieu-khoan title-rule">
-        <InView
+        {/* <InView
           as="div"
           onChange={(inView, entry) => inView && setMenuActive(10)}
-        />
+        /> */}
         Thông tin liên hệ hỗ trợ
         <Image className="RulesImg-icon" alt="" src={RulesImg} />
       </div>
