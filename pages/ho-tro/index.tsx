@@ -29,7 +29,7 @@ const SupportVtp = () => {
     const [api, contextHolder] = notification.useNotification();
     // const [menuActive, setMenuActive] = useState(0);
     const [loading, setLoading] = useState(false);
-    const [errorField, setErrorField] = useState('name');
+    const [errorField, setErrorField] = useState<any>('name');
     const errorFieldRef = useRef<any>(null);
 
     useEffect(() => {
