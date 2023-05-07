@@ -33,9 +33,9 @@ const SupportVtp = () => {
         }
     }, [errorField]);
 
-    const onFinishFailed = ({ errorFields }) => {
+    const onFinishFailed = (error: any) => {
         // Lấy trường đầu tiên có lỗi validation
-        const [firstErrorField] = errorFields;
+        const [firstErrorField] = error?.errorFields;
         // Nếu có trường đó, set giá trị của errorFieldRef
         if (firstErrorField) {
             if (firstErrorField.name[0] === errorField) {
