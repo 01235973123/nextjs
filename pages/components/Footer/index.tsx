@@ -58,7 +58,11 @@ const Footer = () => {
       </div>
       <div className="about">
         <p className="title">Về Phúc Long Express</p>
-        <p className="item">Giới thiệu</p>
+        <p className="item">
+          <Link href="/" className="item">
+            Giới thiệu
+          </Link>
+        </p>
         <p className="item">Tin tức</p>
         <p className="item">
           <Link href="/support-vtp" className="item" target="_blank">
