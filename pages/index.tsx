@@ -99,13 +99,13 @@ const Landing = () => {
             alt=""
             src={Dotblue}
           />
-          <p className="text-1">Giới thiệu chung</p>
+          <div className="text-1">Giới thiệu chung</div>
           <div className="br-1"></div>
-          <p className="text-2">
+          <div className="text-2">
             Chúng tôi với đội ngũ chuyên nghiệp, trách nhiệm, nhiệt tình, lấy
             khách hàng là cốt lõi phát triển công ty, chúng tôi mong đợi sẽ đưa
             đến cho quý khách những trải nghiệm và dịch vụ tốt nhất.
-          </p>
+          </div>
           <InView
             as="div"
             onChange={(inView, entry) => {
@@ -117,27 +117,27 @@ const Landing = () => {
           />
           <div className="about-common">
             <div className="item">
-              <Image className="icon" alt="" src={Tamnhin} />
-              <p className="title">Tầm nhìn</p>
-              <p className="descrip">
+              <Image className="icon" alt="" src={Tamnhin} style={{ width: "auto", height: "auto" }} />
+              <div className="title">Tầm nhìn</div>
+              <div className="descrip">
                 Đến năm 2025 trở thành công ty hàng đầu về dịch vụ mua hộ và vận
                 chuyển từ UK, EU về Việt Nam.
-              </p>
+              </div>
             </div>
             <div className="item">
               <Image className="icon" alt="" src={Sumenh} />
-              <p className="title">Sứ mệnh</p>
-              <p className="descrip">
+              <div className="title">Sứ mệnh</div>
+              <div className="descrip">
                 Ứng dụng công nghệ, nâng cao chất lượng, đào tạo đội ngũ chuyên
                 nghiệp.
-              </p>
+              </div>
             </div>
             <div className="item">
               <Image className="icon" alt="" src={Giatri} />
-              <p className="title">Giá trị cốt lõi</p>
-              <p className="descrip">
+              <div className="title">Giá trị cốt lõi</div>
+              <div className="descrip">
                 Sự hài lòng của khách hàng là trọng tâm mà chúng tôi hướng đến.
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -154,22 +154,22 @@ const Landing = () => {
               }}
             />
             <div className="item">
-              <Image alt="" src={Active} /> Giao hàng chuyên nghiệp
+              <Image alt="" src={Active} style={{ width: "auto", height: "auto" }} /> Giao hàng chuyên nghiệp
             </div>
             <div className="item">
-              <Image alt="" src={Active} />
+              <Image alt="" src={Active} style={{ width: "auto", height: "auto" }} />
               Sẵn sàng khi cần
             </div>
             <div className="item">
-              <Image alt="" src={Active} />
+              <Image alt="" src={Active} style={{ width: "auto", height: "auto" }} />
               Tiết kiệm tối đa
             </div>
             <div className="item">
-              <Image alt="" src={Active} />
+              <Image alt="" src={Active} style={{ width: "auto", height: "auto" }} />
               An toàn tuyệt đối
             </div>
             <div className="item">
-              <Image alt="" src={Active} />
+              <Image alt="" src={Active} style={{ width: "auto", height: "auto" }} />
               Hạn chế rủi ro
             </div>
           </div>
@@ -187,7 +187,7 @@ const Landing = () => {
             alt=""
             src={Dotblue}
           />
-          <p className="text-1">Quốc gia hỗ trợ dịch vụ</p>
+          <div className="text-1">Quốc gia hỗ trợ dịch vụ</div>
           <InView
             as="div"
             onChange={(inView, entry) => {
@@ -198,10 +198,10 @@ const Landing = () => {
             }}
           />
           <div className="br-1"></div>
-          <p className="text-2">
+          <div className="text-2">
             Chúng tôi cung cấp đa dạng dịch vụ để khách hàng có thể chọn lựa phù
             hợp với nhu cầu.
-          </p>
+          </div>
         </div>
         <div className={`body`}>
           <div className="content-2">
@@ -230,7 +230,7 @@ const Landing = () => {
                 <div className="block">
                   <div className="block-country">
                     <Image className="Uk-icon" alt="" src={Uk} />
-                    <p className="text-3">UK</p>
+                    <div className="text-3">UK</div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -238,7 +238,7 @@ const Landing = () => {
                 <div className="block">
                   <div className="block-country">
                     <Image className="Us-icon" alt="" src={Us} />
-                    <p className="text-3">US</p>
+                    <div className="text-3">US</div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -246,7 +246,7 @@ const Landing = () => {
                 <div className="block">
                   <div className="block-country">
                     <Image className="Jav-icon" alt="" src={Jav} />
-                    <p className="text-3">Nhật Bản</p>
+                    <div className="text-3">Nhật Bản</div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -254,7 +254,7 @@ const Landing = () => {
                 <div className="block">
                   <div className="block-country">
                     <Image className="Balan-icon" alt="" src={Balan} />
-                    <p className="text-3">Ba Lan</p>
+                    <div className="text-3">Ba Lan</div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -262,7 +262,7 @@ const Landing = () => {
                 <div className="block">
                   <div className="block-country">
                     <Image className="Bodaonha-icon" alt="" src={Bodaonha} />
-                    <p className="text-3">Bồ Đào Nha</p>
+                    <div className="text-3">Bồ Đào Nha</div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -270,7 +270,7 @@ const Landing = () => {
                 <div className="block">
                   <div className="block-country">
                     <Image className="Tbn-icon" alt="" src={Tbn} />
-                    <p className="text-3">Tây Ban Nha</p>
+                    <div className="text-3">Tây Ban Nha</div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -301,7 +301,7 @@ const Landing = () => {
                 >
                   Logistics xanh- Hướng đi mới để phát triển bền vững
                 </a>
-                <p className="date">Ngày đăng: 30/01/2023</p>
+                <div className="date">Ngày đăng: 30/01/2023</div>
               </div>
             </div>
             <InView
@@ -322,7 +322,7 @@ const Landing = () => {
                 >
                   Chuyển đổi số thúc đẩy tăng trưởng và phát triển bền vững
                 </a>
-                <p className="date">Ngày đăng: 30/01/2023</p>
+                <div className="date">Ngày đăng: 30/01/2023</div>
               </div>
             </div>
           </div>
@@ -341,10 +341,10 @@ const Landing = () => {
               Tải app để trải nghiệm dịch vụ của chúng tôi.
             </h3>
             <div className="br"></div>
-            <p className="descrip text-white">
+            <div className="descrip text-white">
               Với những tính năng tiện tích, sử dụng đơn giản, nhanh chóng. Vui
               lòng tải app để trải nghiệm ngay:
-            </p>
+            </div>
             <div className="flex justify-evenly mt-10 flex-wrap">
               <div className="flex flex-col items-center justify-center">
                 <a
@@ -407,7 +407,7 @@ const Landing = () => {
           <div className="network">
             <h3>Mạng lưới đối tác lớn</h3>
             <div className="br"></div>
-            <p className="descrip">
+            <div className="descrip">
               Chúng tôi đang hợp tác với rất nhiều đối tác vận chuyển uy tín,
               chất lượng và tốc độ, đảm bảo đem đến chất lượng tốt nhất cho
               khách hàng.
@@ -419,7 +419,7 @@ const Landing = () => {
                   }
                 }}
               />
-            </p>
+            </div>
           </div>
           <div style={{ position: "absolute", top: "50%" }}></div>
           {/* <Swiper
@@ -435,41 +435,41 @@ const Landing = () => {
             <div>
               <h3>Mạng lưới đối tác lớn</h3>
               <div className="br"></div>
-              <p className="descrip">
+              <div className="descrip">
                 Chúng tôi đang hợp tác với rất nhiều đối tác vận chuyển uy
                 tín, chất lượng và tốc độ, đảm bảo đem đến chất lượng tốt nhất
                 cho khách hàng.
-              </p>
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
               <h3>Mạng lưới đối tác rộng khắp</h3>
               <div className="br"></div>
-              <p className="descrip">
+              <div className="descrip">
                 Chúng tôi đã hợp tác với rất nhiều khách hàng uy tín, đảm bảo
                 đem đến chất lượng tốt nhất cho khách hàng.
-              </p>
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
               <h3>Mạng lưới đối tác rộng khắp</h3>
               <div className="br"></div>
-              <p className="descrip">
+              <div className="descrip">
                 Chúng tôi đã hợp tác với rất nhiều khách hàng uy tín, đảm bảo
                 đem đến chất lượng tốt nhất cho khách hàng.
-              </p>
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
               <h3>Mạng lưới đối tác rộng khắp</h3>
               <div className="br"></div>
-              <p className="descrip">
+              <div className="descrip">
                 Chúng tôi đã hợp tác với rất nhiều khách hàng uy tín, đảm bảo
                 đem đến chất lượng tốt nhất cho khách hàng.
-              </p>
+              </div>
             </div>
           </SwiperSlide>
         </Swiper> */}
@@ -507,8 +507,8 @@ const Landing = () => {
                     <Image className="avatar" alt="" src={Avatar} />
                   </div>
                   <div className="info">
-                    <p className="name">Nguyễn Minh Anh</p>
-                    <p className="position">Nhân viên văn phòng</p>
+                    <div className="name">Nguyễn Minh Anh</div>
+                    <div className="position">Nhân viên văn phòng</div>
                   </div>
                 </div>
                 <div className="describe">
@@ -547,8 +547,8 @@ const Landing = () => {
                     <Image className="avatar" alt="" src={Avatar} />
                   </div>
                   <div className="info">
-                    <p className="name">Phạm Khánh Nguyên</p>
-                    <p className="position">Nội trợ</p>
+                    <div className="name">Phạm Khánh Nguyên</div>
+                    <div className="position">Nội trợ</div>
                   </div>
                 </div>
                 <div className="describe">

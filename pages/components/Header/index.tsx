@@ -79,7 +79,7 @@ const Header = (props: any) => {
               color={
                 "linear-gradient(183.41deg, #f09e3e -8.57%, #ffd94f 82.96%)"
               }
-              key={1}
+              key={2}
             >
               <a
                 href="https://apps.apple.com/vn/app/phuclong-express/id6447059509"
@@ -90,7 +90,7 @@ const Header = (props: any) => {
             </Tooltip>
           </div>
         </div>
-        <Image className="onboarding-icon" alt="" src={Onboarding} />
+        <Image className="onboarding-icon" alt="onboarding" src={Onboarding} style={{ width: "auto", height: "auto" }} priority />
       </div>
     </div>
   );

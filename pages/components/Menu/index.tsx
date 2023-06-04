@@ -83,7 +83,7 @@ const MenuToggle = (props: any) => {
         <div className="menu-toggle" onClick={showDrawer}>
           <MenuOutlined />
         </div>
-        <Drawer placement="right" onClose={onClose} visible={visible}>
+        <Drawer placement="right" onClose={onClose} open={visible}>
           <Menu
             theme="dark"
             mode="inline"
