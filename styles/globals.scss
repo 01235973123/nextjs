@@ -1122,7 +1122,7 @@ nav ul li a:hover {
     }
   }
   .descr-rule {
-    padding: 0 7% 0 7% !important;
+    padding: 0 9% !important;
     .button {
       background: linear-gradient(90deg,#f09e3e 15.62%, #aaaa39 100%);
       &:hover {
@@ -1338,5 +1338,8 @@ nav ul li a:hover {
   cursor: pointer;
   @media only screen and (max-width: 500px) {
     font-size: 16px;
+  }
+  @media only screen and (max-width: 400px) {
+    font-size: 14px;
   }
 }
